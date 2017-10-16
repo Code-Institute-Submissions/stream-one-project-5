@@ -69,8 +69,14 @@
 
 		<section class="infoBox">
 			<h2>Quick Contact</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p>If you would like to join the group there is a <a class="textLink" href="join.html">membership form</a> available here. For other enquiries, please use the contact form below. Fields marked * are required.</p>
+			<form id="quickForm">
+				<div class="formElement">Name*:</div> <input class="formInput" type="text" name="name" required /><br />
+				<div class="formElement">E-Mail*:</div> <input class="formInput" type="email" name="email" required /><br />
+				<div class="formElement">Telephone:</div> <input class="formInput" type="tel" name="telephone" /><br />
+				<div class="formElement">Message*:</div> <textarea class="formInput" rows="4" name="message" required></textarea><br />
+				<input class="formElement" type="submit" value="Submit" />
+			</form>
 		</section>
 
 	</section>
