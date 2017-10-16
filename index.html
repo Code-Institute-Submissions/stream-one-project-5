@@ -9,9 +9,24 @@
 	<link rel="stylesheet" href="reset.css" />
 	<link rel="stylesheet" href="walking.css" />
 	<link rel="stylesheet" media="screen and (min-width: 801px)" href="desktop.css" />
+
+	<!-- Start of OS Openspace Maps Code -->
+	<script type="text/javascript" src="https://openspace.ordnancesurvey.co.uk/osmapapi/openspace.js?key=5B2D6FA0BB4455B0E0530C6CA40A6A8D"></script>
+	<script type= "text/javascript" src="https://openspace.ordnancesurvey.co.uk/osmapapi/script/mapbuilder/basicmap.js"></script>
+	<script type= "text/javascript" src="https://openspace.ordnancesurvey.co.uk/osmapapi/script/mapbuilder/searchbox.js"></script>
+	<script type="text/javascript">
+		function initmapbuilder()
+	{
+	var options = {resolutions: [2500, 1000, 500, 200, 100, 50, 25, 10, 5, 4, 2.5, 2, 1]};
+	osMap = new OpenSpace.Map('map', options);
+	setglobaloptions();
+	osMap.setCenter(new OpenSpace.MapPoint(254382.5,69060),7);}
+	</script>
+	<!-- End of OS Openspace Maps Code -->
+
 </head>
 
-<body>
+<body onload="initmapbuilder()">
 
 	<header id="mainHeader">
 		<h1>South West Walking</h1>
@@ -38,12 +53,15 @@
 
 		<section class="infoBox">
 			<h2>Next Walk</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<h3>Saturday 11 November 2017, 10.00 am</h3>
+			<p>Parking near Dousland, we will head up the route of the old railway line towards Princetown before turning south and following the Devonport Leat back towards the car park.</p>
+			<p class="infoLink"><a href="future.html">[Full Details]</a></p>
+			<div id="map"></div>
 		</section>
 
 		<section class="infoBox">
 			<h2>Last Walk</h2>
+			<h3>Saturday 14 October 2017</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua.</p>
 		</section>
