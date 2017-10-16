@@ -30,3 +30,8 @@
 	float: right;
 	padding: 5px;
 }
+
+footer {
+	text-align: left;
+	padding-left: 10px;
+}
