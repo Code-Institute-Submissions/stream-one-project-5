@@ -10,14 +10,20 @@ body {
 	color: white;
 }
 
-#mainHeader h1 {
+h1 {
 	font-size: 1.5em;
 	padding: 5px;
-}	
+}
+
+h2 {
+	font-size: 1.2em;
+	padding: 5px;
+	text-align: center;
+}
 
 #mainHeader a {
 	border-top: 1px solid white;
-	padding: 2px;
+	padding: 5px;
 	display: block;
 	width: 100%;
 	text-decoration: none;
@@ -40,4 +46,30 @@ footer {
 	padding: 5px;
 	color: white;
 	text-align: center;
+	box-shadow: 0px -2px 5px 2px #669966;	
+}
+
+#intro {
+	background-color: white;
+	border-bottom: : 2px solid #339933;
+	box-shadow: 0px 2px 5px 2px #669966;	
+}
+
+p {
+	padding: 10px;
+}
+
+#homeContent {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.infoBox {
+	flex: 1;
+	margin: 20px;
+	background-color: white;
+	border: 2px solid #339933;
+	border-radius: 15px;
+	box-shadow: 0px 0px 5px 2px #339933;
+	min-width: 250px;
 }
