@@ -1,11 +1,11 @@
 
 #mainHeader {
 	text-align: left;
-	padding: 5px;
+	padding: 5px 0 5px 0;
 }
 
 #mainHeader h1 {
-	padding-left: 5px;
+	padding-left: 10px;
 	font-size: 1.5em;
 	display: inline;
 }	
@@ -33,5 +33,9 @@
 
 footer {
 	text-align: left;
+	padding: 5px 0 5px 0;
+}
+
+#footerText {
 	padding-left: 10px;
 }
