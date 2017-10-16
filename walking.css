@@ -1,0 +1,38 @@
+body {
+	background-color: #ccffcc;
+	font-family: Calibri, sans-serif;
+}
+
+#mainHeader {
+	background-color: #339933;
+	width: 100%;
+	text-align: center;
+	color: white;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+#mainHeader h1 {
+	font-size: 1.5em;
+	padding: 5px;
+}	
+
+#mainHeader a {
+	border-top: 1px solid white;
+	padding: 2px;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+}
+
+#mainHeader a:last-child{
+	border-bottom: 1px solid white;
+}
+
+#mainHeader a:hover {
+	text-decoration: underline;
+	color: #339933;
+	background-color: white;
+}

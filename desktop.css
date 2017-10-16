@@ -1,0 +1,32 @@
+
+#mainHeader {
+	text-align: left;
+	padding: 5px;
+}
+
+#mainHeader h1 {
+	padding-left: 5px;
+	font-size: 1.5em;
+	display: inline;
+}	
+
+#mainHeader a {
+	display: inline;
+	border: none;
+	padding-right: 10px;
+}
+
+#mainHeader a:last-child{
+	border-bottom: none;
+}
+
+#mainHeader a:hover {
+	text-decoration: underline;
+	color: white;
+	background-color: #339933;
+}
+
+#menuBar {
+	float: right;
+	padding: 5px;
+}
