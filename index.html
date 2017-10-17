@@ -11,7 +11,7 @@
 	<link rel="stylesheet" media="screen and (min-width: 801px)" href="desktop.css" />
 </head>
 
-<body onload="homeMap()">
+<body>
 
 	<header id="mainHeader">
 		<h1>South West Walking</h1>
@@ -30,7 +30,7 @@
 
 	<section id="intro">
 		<h2>Welcome to South West Walking</h2>
-		<p>We are a small, friedly group which arranges monthly walks around Devon and Cornwall. Many of our walks are on Dartmoor, with the occasional trip to Bodmin Moor, Exmoor or the South West Coast Path. We typically meet at 10.00 am on the third Saturday of each month. The group is suitable for all ages and all levels of experience, it is not necessary to be an expert walker to join.</p>
+		<p>We are a small, friendly group which arranges monthly walks around Devon and Cornwall. Many of our walks are on Dartmoor, with the occasional trip to Bodmin Moor, Exmoor or the South West Coast Path. We typically meet at 10.00 am on the third Saturday of each month. The group is suitable for all ages and all levels of experience, it is not necessary to be an expert walker to join.</p>
 		<p>Our website provides information about upcoming events and photo galleries of past walks, as well as guidance for people who may not be familiar with rural walking. Please contact us for more information or to join the group.</p>
 	</section>
 
@@ -81,8 +81,10 @@
 			setglobaloptions();
 			osMap.setCenter(new OpenSpace.MapPoint(254382.5,68750),7);
 		}
+		window.onload = homeMap();
 	</script>
 	<!-- End of OS Openspace Maps Code -->
+
 	<script type="text/javascript">
 		function validateQuickForm() {
 			alert ("Submission Successful");
