@@ -39,3 +39,19 @@ footer {
 #footerText {
 	padding-left: 10px;
 }
+
+#membershipBoxes {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.membershipSection {
+	flex: 1;
+}
+
+fieldset {
+	margin: 0 auto 10px auto;
+	max-width: 500px;
+	box-sizing: border-box;
+	text-align: left;
+}

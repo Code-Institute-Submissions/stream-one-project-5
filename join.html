@@ -6,7 +6,6 @@
 	<title>Home Page | South West Walking</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="reset.css" />
 	<link rel="stylesheet" href="walking.css" />
 	<link rel="stylesheet" media="screen and (min-width: 801px)" href="desktop.css" />
 </head>
@@ -24,14 +23,60 @@
 		</nav>
 	</header>
 
-	<section id="page">
+	<section id="pageContent">
 		<h2>Join the Group</h2>
 		<p>If you would like to join the group, please fill in the form below. We will add you to our mailing lists and contact you with details of each walk as well as arranging transport if required.</p>
+		<p>Fields marked * are required.</p>
+
+		<form name="membershipForm" id="membershipForm" onsubmit="validateForm()">
+			<div id="membershipBoxes">
+				<fieldset class="membershipSection">
+					<legend>Contact Details</legend>
+					<div class="formElement">Name*:</div> <input class="membershipFormInput" type="text" name="fullName" required /><br />
+					<div class="formElement">E-Mail*:</div> <input class="membershipFormInput" type="email" name="email" required /><br />
+					<div class="formElement">Telephone:</div> <input class="membershipFormInput" type="tel" name="telephone" /><br />
+					<div class="formElement">Address Line 1:</div> <input class="membershipFormInput" type="text" name="address1" /><br />
+					<div class="formElement">Address Line 2:</div> <input class="membershipFormInput" type="text" name="address2" /><br />
+					<div class="formElement">Town/City:</div> <input class="membershipFormInput" type="text" name="townCity" /><br />
+					<div class="formElement">County:</div> <input class="membershipFormInput" type="text" name="county" /><br />
+					<div class="formElement">Post Code:</div> <input class="membershipFormInput" type="text" name="postCode" /><br />
+				</fieldset>
+				<fieldset class="membershipSection">
+					<legend>Walking Details</legend>
+					<div class="formElement">Experience:</div>
+					 <input type="radio" name="experience" value="Beginner" /> Beginner<br />
+					 <input type="radio" name="experience" value="Intermediate" /> Medium<br />
+					 <input type="radio" name="experience" value="Experienced" /> Experienced<br />
+					<div class="formElement">Interests (select all that apply):</div>
+					 <input type="checkbox" name="interests" value="Dartmoor" /> Dartmoor<br />
+					 <input type="checkbox" name="interests" value="Bodmin Moor" /> Bodmin Moor<br />
+					 <input type="checkbox" name="interests" value="Exmoor" /> Exmoor<br />
+					 <input type="checkbox" name="interests" value="Coast Path Devon" /> Coast Path (Devon)<br />
+					 <input type="checkbox" name="interests" value="Coast Path Cornwall" /> Coast Path (Cornwall)<br />
+					<div class="formElement">Do You Require Transport</div>
+					 <input type="radio" name="transport" value="Yes" /> Yes
+					 <input type="radio" name="transport" value="No" /> No
+					<br />
+					<div class="formElement">Can You Offer Lifts to Others?</div>
+					 <input type="radio" name="lifts" value="Yes" /> Yes
+					 <input type="radio" name="lifts" value="No" /> No
+					<br />
+				</fieldset>
+			</div>
+			<input class="formElement submitButton" type="submit" value="Submit" />
+		</form>
+
 	</section>
 
 	<footer>
 		<span id="footerText">&copy; 2017 South West Walking</span>
 	</footer>
+
+	<script type="text/javascript">
+		function validateForm() {
+			alert ("Submission Successful");
+		}
+	</script>
 
 </body>
 
