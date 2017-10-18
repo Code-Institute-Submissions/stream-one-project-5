@@ -5,6 +5,9 @@ body {
 	padding: 0;
 }
 
+p {
+	text-align: justify;
+}
 
 h1 {
 	font-size: 1.5em;
@@ -25,10 +28,7 @@ h2 {
 
 h3 {
 	font-weight: bold;
-	padding: 2px;
-	text-align: center;
-	margin: 20px 0 0 0;
-	padding: 0;
+	text-align: left;
 }
 
 #mainHeader {
@@ -37,6 +37,7 @@ h3 {
 	text-align: center;
 	color: white;
 }
+
 #mainHeader a {
 	border-top: 1px solid white;
 	padding: 5px 0 5px 0;
@@ -77,11 +78,6 @@ footer {
 	font-size: 1.5em;
 	margin: 0;
 	padding: 0;
-}
-
-p {
-	padding: 0;
-	text-align: justify;
 }
 
 #homeContent {
@@ -133,6 +129,12 @@ p {
 	margin-bottom: 10px;
 	margin: 0;
 	padding: 0;
+}
+
+.infoBox h3 {
+	padding: 2px;
+	text-align: center;
+	margin: 20px 0 0 0;
 }
 
 .textLink a {
@@ -209,6 +211,30 @@ p {
 
 #pageContent h2 {
 	font-size: 1.5em;
+}
+
+#pageContent h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.adviceSection {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.adviceSection p {
+	margin-top: 0;
+}
+
+.adviceImage {
+	width: 160px;
+	height: 120px;
+	float: left;
+	margin: 0 20px 0 0;
+	clear: both;
+	border: 2px solid #339933;
+	box-shadow: 5px 0 5px 0 #669966;
 }
 
 fieldset {
