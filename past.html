@@ -6,9 +6,9 @@
 	<title>Home Page | South West Walking</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="reset.css" />
 	<link rel="stylesheet" href="walking.css" />
 	<link rel="stylesheet" media="screen and (min-width: 801px)" href="desktop.css" />
+
 </head>
 
 <body>
@@ -24,9 +24,63 @@
 		</nav>
 	</header>
 
+	<section id="pageContent">
+		<h2>Photo Galleries</h2>
+
+		<section id="upcoming">
+			<section class="upcomingSection">
+				<a class="switchLink" onclick="contentSwitcher('oct17')">OCT</a>
+				<a class="switchLink" onclick="contentSwitcher('sep17')">SEP</a>
+				<a class="switchLink" onclick="contentSwitcher('aug17')">AUG</a>
+				<a class="switchLink" onclick="contentSwitcher('jul17')">JUL</a>
+				<a class="switchLink" onclick="contentSwitcher('jun17')">JUN</a>
+				<a class="switchLink" onclick="contentSwitcher('may17')">MAY</a>
+			</section>
+			<section class="upcomingSection">
+				<section id="oct17" class="walkSwitcher">
+					<h3>Saturday 14 October 2017</h3>
+				</section>
+				<section id="sep17" class="walkSwitcher">
+					<h3>Saturday 9 September 2017</h3>
+				</section>
+				<section id="aug17" class="walkSwitcher">
+					<h3>Saturday 12 August 2017</h3>
+				</section>
+				<section id="jul17" class="walkSwitcher">
+					<h3>Saturday 8 July 2017</h3>
+				</section>
+				<section id="jun17" class="walkSwitcher">
+					<h3>Saturday 10 June 2017</h3>
+				</section>
+				<section id="may17" class="walkSwitcher">
+					<h3>Saturday 13 May 2017</h3>
+				</section>
+			</section>			
+		</section>
+		
+	</section>
+
 	<footer>
 		<span id="footerText">&copy; 2017 South West Walking</span>
 	</footer>
+
+	<script>
+		/* Display the first gallery in the list by default on page load.  */
+		function defaultDisplay() {
+			var walkList = document.getElementsByClassName("walkSwitcher");
+			walkList[0].style.display = "block";
+		}
+		window.onload = defaultDisplay();
+
+		/* Display a given gallery and hide all others when the relevant link is clicked.  */
+		function contentSwitcher(month) {
+			var walkList = document.getElementsByClassName("walkSwitcher");
+			for (i = 0; i < walkList.length; i++) {
+				walkList[i].style.display = "none";
+			}
+			document.getElementById(month).style.display = "block";
+		}
+	</script>
 
 </body>
 
