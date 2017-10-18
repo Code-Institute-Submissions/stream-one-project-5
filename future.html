@@ -32,23 +32,38 @@
 	<section id="pageContent">
 		<h2>Upcoming Walks</h2>
 
-		<section id="upcoming">
-			<section class="upcomingSection">
-				<a class="switchLink" href="" onclick="contentSwitcher('nov17')">NOV</a>
-				<a class="switchLink" href="" onclick="contentSwitcher('dec17')">DEC</a>
-				<a class="switchLink" href="" onclick="contentSwitcher('jan18')">JAN</a>
-				<a class="switchLink" href="" onclick="contentSwitcher('feb18')">FEB</a>
-				<a class="switchLink" href="" onclick="contentSwitcher('mar18')">MAR</a>
-				<a class="switchLink" href="" onclick="contentSwitcher('apr18')">APR</a>
+		<section id="walkDetails">
+			<section class="walkSection">
+				<a class="switchLink" onclick="contentSwitcher('nov17')">NOV</a>
+				<a class="switchLink" onclick="contentSwitcher('dec17')">DEC</a>
+				<a class="switchLink" onclick="contentSwitcher('jan18')">JAN</a>
+				<a class="switchLink" onclick="contentSwitcher('feb18')">FEB</a>
+				<a class="switchLink" onclick="contentSwitcher('mar18')">MAR</a>
+				<a class="switchLink" onclick="contentSwitcher('apr18')">APR</a>
 			</section>
-			<section class="upcomingSection">
-				<section id="futureWalk">
+			<section class="walkSection">
+				<section id="nov17" class="walkSwitcher">
 					<h3>Saturday 11 November 2017</h3>
 					<p>Meet at 10.00 am in the car park at the top of the hill just east of Dousland. We will walk up the route of the old Yelverton to Princetown railway, crossing the new Peekhill Bridge. We will stay on the old railway line until shortly after Ingra Tor, before turning south-east to cross the main B3212 road and reach Black Tor.</p>
 					<p>Meeting the Devonport Leat at the point where it crosses the River Meavy, we will follow the leat through the woods above Burrator Reservoir. Picking up the road below Leather Tor, we branch away briefly through the woods again and end with a short uphill climb via the road back to the car park. The route is relatively easy, although there is one steep downhill section.</p>
 					<!-- Inline styling needs to be checked - is there a better alternative? -->
 					<div id="futureMapHolder"><div id="map" style="width: 100%; height: 500px;"></div></div>
-					<script type= "text/javascript" src="js/nov17.js"></script>
+					<script type="text/javascript" src="js/nov17.js"></script>
+				</section>
+				<section id="dec17" class="walkSwitcher">
+					<h3>Saturday 9 December 2017</h3>
+				</section>
+				<section id="jan18" class="walkSwitcher">
+					<h3>Saturday 13 January 2018</h3>
+				</section>
+				<section id="feb18" class="walkSwitcher">
+					<h3>Saturday 10 February 2018</h3>
+				</section>
+				<section id="mar18" class="walkSwitcher">
+					<h3>Saturday 10 March 2018</h3>
+				</section>
+				<section id="apr18" class="walkSwitcher">
+					<h3>Saturday 14 April 2018</h3>
 				</section>
 			</section>			
 		</section>
@@ -58,6 +73,8 @@
 	<footer>
 		<span id="footerText">&copy; 2017 South West Walking</span>
 	</footer>
+
+	<script src="js/switcher.js"></script>
 
 </body>
 

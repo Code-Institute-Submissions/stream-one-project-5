@@ -12,6 +12,12 @@ On the Home Page, Flexbox is used to arrange the information boxes and a minimum
 
 On the Upcoming Walks page, the flex direction is initially set to column, in order to display the walk description and map below the switcher menu. In the desktop stylesheet, the direction is altered to row in order to show the menu and details side by side.
 
+## JavaScript Functionality
+
+External scripts are used in the context of the OS Openspace API on both the Home Page and the Upcoming Walks page. A very basic validation script is used for both the quick contact form on the Home Page and the membership form on the Join the Group page.
+
+Further use of JavaScript is made on the Upcoming Walks and Photo Galleries page by the inclusion of a content switcher. That script loads up the details of one particular walk (the next one on the Upcoming Walks page and the most recent on the Photo Galleries page). There are links provided which when clicked, use a JavaScript function to display the details of the chosen walk while hiding all the others.
+
 ## Site Content
 
 ### Home Page
@@ -27,6 +33,10 @@ The Home Page shows a header image of a past walk above a brief introductory par
 ### Upcoming Walks
 
 The page detailing upcoming walks shows a brief description of the next schedule walk, along with a map of the route created using OS Openspace Map Builder and embedded using the Openspace API. There is a menu which allows the user to switch between this map and others in the upcoming schedule. The next walk always displays as default when the page loads.
+
+### Photo Galleries
+
+The galleries page gives a brief recap of the most recent walk, along with a short gallery of photos taken along the route. There is a menu identical to that on the Upcoming Walks page, enabling the user to switch between all the available galleries. By default, the most recent walk will load first.
 
 ### Walking Advice
 

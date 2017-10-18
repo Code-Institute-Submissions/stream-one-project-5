@@ -250,23 +250,23 @@ fieldset {
 	max-width: 500px;
 }
 
-#upcoming {
+#walkDetails {
 	display: flex;
 	flex-flow: column wrap;
 }
 
-.upcomingSection {
+.walkSection {
 	flex: 1;
 	min-width: 250px;
 	margin-top: 20px;
 }
 
-.upcomingSection h3 {
+.walkSection h3 {
 	margin-top: 0px;
 	text-align: center;
 }
 
-.upcomingSection ul {
+.walkSection ul {
 	padding: 0;
 }
 
@@ -293,8 +293,4 @@ fieldset {
 	box-shadow: 0px 0px 5px 5px #669966;
 	color: #336633;
 	transition: 0.5s;
-}
-
-.walkSwitcher {
-	display: none;
 }
