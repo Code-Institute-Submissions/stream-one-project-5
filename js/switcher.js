@@ -1,4 +1,4 @@
-/* Put every element with class 'walkSwitcher' into array 'walkList. */
+/* Put every element with class 'walkSwitcher' into array 'walkList'. */
 var walkList = document.getElementsByClassName("walkSwitcher");
 /* Run default display function when page loads. */
 window.onload = defaultDisplay();
