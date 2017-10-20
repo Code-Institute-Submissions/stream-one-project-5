@@ -322,9 +322,6 @@ fieldset {
 	left: 0;
 }
 
-.fullimage {
-}
-
 .fullImage img {
 	width: 75%;
 	max-width: 800px;
@@ -343,9 +340,28 @@ fieldset {
 }
 
 #boxCloser {
-	position: fixed;
-	top: 10px;
+	position: absolute;
 	right: 10px;
+	font-weight: bold;
+	font-size: 250%;
+	color: white;
+	cursor: pointer;
+}
+
+#previousImage {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	font-weight: bold;
+	font-size: 250%;
+	color: white;
+	cursor: pointer;
+}
+
+#nextImage {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
 	font-weight: bold;
 	font-size: 250%;
 	color: white;
