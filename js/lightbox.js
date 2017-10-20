@@ -4,6 +4,8 @@ var lightbox = document.getElementById("activeImage");
 var chosenImage;
 var activeMonth;
 
+var walkGallery = document.getElementsByClassName("walkGallery");
+
 var boxControls = '\
 	<div id="boxCloser" onclick="closeBox()">&times;</div>\
 	<div id="previousImage" onclick="previousImage()">&lt;</div>\
@@ -18,18 +20,29 @@ function openBox(month, imagePosition) {
 	chosenImage = imagePosition;
 	activeMonth = month;
 	lightbox.innerHTML = boxControls + '<img src="img/' + month + '/' + imagePosition +'.jpg" alt="Walk Image" />';
+	if (chosenImage === 1) {
+		document.getElementById("previousImage").style.display = "none";
+	} else if (chosenImage === walkGallery.length) {
+		document.getElementById("nextImage").style.display = "none";
+	}
 }
 
 /* After an image is selected, the user can move back to the previous image. */
 function previousImage() {
-	var newImage = chosenImage--;
-	lightbox.innerHTML = boxControls + '<img src="img/' + activeMonth + '/' + newImage +'.jpg" alt="Walk Image" />';
+	chosenImage--;
+	lightbox.innerHTML = boxControls + '<img src="img/' + activeMonth + '/' + chosenImage +'.jpg" alt="Walk Image" />';
+	if (chosenImage === 1) {
+		document.getElementById("previousImage").style.display = "none";
+	}
 }
 
 /* After an image is selected, the user can move on to the next image. */
 function nextImage() { 
-	var newImage = chosenImage++;
-	lightbox.innerHTML = boxControls + '<img src="img/' + activeMonth + '/' + newImage +'.jpg" alt="Walk Image" />';
+	chosenImage++;
+	lightbox.innerHTML = boxControls + '<img src="img/' + activeMonth + '/' + chosenImage +'.jpg" alt="Walk Image" />';
+	if (chosenImage === walkGallery.length) {
+		document.getElementById("nextImage").style.display = "none";
+	}
 }
 
 /* When the close icon is clicked, remove the image HTML from the activeImage element and hide it. */
