@@ -326,8 +326,7 @@ fieldset {
 	width: 75%;
 	max-width: 800px;
 	height: auto;
-	border: 2px solid #339933;
-	box-shadow: 0px 0px 5px 2px #669966;
+	border: 5px solid white;
 	/* Positioning courtesy of
 	https://stackoverflow.com/questions/12665368/
 	center-image-in-html-viewport-without-javascript */
@@ -343,9 +342,13 @@ fieldset {
 	position: absolute;
 	right: 10px;
 	font-weight: bold;
-	font-size: 250%;
+	font-size: 2.5em;
 	color: white;
 	cursor: pointer;
+}
+
+#boxCloser:hover, #previousImage:hover, #nextImage:hover {
+	color: #999999;
 }
 
 #previousImage {
@@ -353,7 +356,7 @@ fieldset {
 	left: 10px;
 	bottom: 10px;
 	font-weight: bold;
-	font-size: 250%;
+	font-size: 2em;
 	color: white;
 	cursor: pointer;
 }
@@ -363,7 +366,7 @@ fieldset {
 	right: 10px;
 	bottom: 10px;
 	font-weight: bold;
-	font-size: 250%;
+	font-size: 2em;
 	color: white;
 	cursor: pointer;
 }

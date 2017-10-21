@@ -1,17 +1,21 @@
 /* Set variable to control activeImage element. */
 var lightbox = document.getElementById("activeImage");
 
+/* Set array for photos in the gallery. */
+var walkGallery = document.getElementsByClassName("walkGallery");
+
+/* Create global variables for gallery month and chosen image to enable use between functions. */
 var chosenImage;
 var activeMonth;
 
-var walkGallery = document.getElementsByClassName("walkGallery");
-
+/* Set variable with HTML for lightbox controls. */
 var boxControls = '\
 	<div id="boxCloser" onclick="closeBox()">&times;</div>\
-	<div id="previousImage" onclick="previousImage()">&lt;</div>\
-	<div id="nextImage" onclick="nextImage()">&gt;</div>\
+	<div id="previousImage" onclick="previousImage()">&#10094;</div>\
+	<div id="nextImage" onclick="nextImage()">&#10095;</div>\
 	';
 
+/* Function for opening lightbox when an image is clicked. */
 function openBox(month, imagePosition) {
 	/* When an image is clicked, display the activeImage element. */
 	lightbox.style.display = "block";

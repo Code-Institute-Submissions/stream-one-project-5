@@ -59,3 +59,7 @@ fieldset {
 #walkDetails {
 	flex-flow: row wrap;
 }
+
+.fullImage img {
+	border: 10px solid white;
+}

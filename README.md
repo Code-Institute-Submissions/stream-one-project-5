@@ -18,6 +18,8 @@ External scripts are used in the context of the OS Openspace API on both the Hom
 
 Further use of JavaScript is made on the Upcoming Walks and Photo Galleries page by the inclusion of a content switcher. That script loads up the details of one particular walk (the next one on the Upcoming Walks page and the most recent on the Photo Galleries page). There are links provided which when clicked, use a JavaScript function to display the details of the chosen walk while hiding all the others.
 
+The Photo Galleries page features a lightbox script which allows a user to click a thumbnail image and display it at a larger size in the centre of the viewport. The script includes 'previous' and 'next' links to enable navigation between images and a 'close' link to remove the lightbox.
+
 ## Site Content
 
 ### Home Page
@@ -36,7 +38,7 @@ The page detailing upcoming walks shows a brief description of the next schedule
 
 ### Photo Galleries
 
-The galleries page gives a brief recap of the most recent walk, along with a short gallery of photos taken along the route. There is a menu identical to that on the Upcoming Walks page, enabling the user to switch between all the available galleries. By default, the most recent walk will load first.
+The galleries page gives a brief recap of the most recent walk, along with a short gallery of photos taken along the route. There is a menu identical to that on the Upcoming Walks page, enabling the user to switch between all the available galleries. By default, the most recent walk will load first. There is a lightbox script which enables photos to be viewed at a larger size.
 
 ### Walking Advice
 
