@@ -11,8 +11,8 @@ var activeMonth;
 /* Set variable with HTML for lightbox controls. */
 var boxControls = '\
 	<div id="boxCloser" onclick="closeBox()">&times;</div>\
-	<div id="previousImage" onclick="previousImage()">&#10094;</div>\
-	<div id="nextImage" onclick="nextImage()">&#10095;</div>\
+	<div id="previousImage" onclick="previousImage()">&#10094;&#10094;</div>\
+	<div id="nextImage" onclick="nextImage()">&#10095;&#10095;</div>\
 	';
 
 /* Function for opening lightbox when an image is clicked. */
