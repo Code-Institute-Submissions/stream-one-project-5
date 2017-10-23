@@ -275,7 +275,7 @@ fieldset {
 .walkSection {
 	flex: 1;
 	min-width: 250px;
-	margin-top: 20px;
+	margin: 20px 10px 0 10px;
 }
 
 .walkSection h3 {

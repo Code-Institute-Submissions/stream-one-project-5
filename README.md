@@ -16,9 +16,9 @@ On the Upcoming Walks page, the flex direction is initially set to column, in or
 
 External scripts are used in the context of the OS Openspace API on both the Home Page and the Upcoming Walks page. A very basic validation script is used for both the quick contact form on the Home Page and the membership form on the Join the Group page.
 
-Further use of JavaScript is made on the Upcoming Walks and Photo Galleries page by the inclusion of a content switcher. That script loads up the details of one particular walk (the next one on the Upcoming Walks page and the most recent on the Photo Galleries page). There are links provided which when clicked, use a JavaScript function to display the details of the chosen walk while hiding all the others.
+Further use of JavaScript is made on the Photo Galleries page by the inclusion of a content switcher. That script loads up the details of the most recent walk. There are links provided which when clicked, use a JavaScript function to display the details of the chosen walk while hiding all the others.
 
-The Photo Galleries page features a lightbox script which allows a user to click a thumbnail image and display it at a larger size in the centre of the viewport. The script includes 'previous' and 'next' links to enable navigation between images and a 'close' link to remove the lightbox.
+The Photo Galleries page also features a lightbox script which allows a user to click a thumbnail image and display it at a larger size in the centre of the viewport. The script includes 'previous' and 'next' links to enable navigation between images and a 'close' link to remove the lightbox.
 
 ## Site Content
 
@@ -34,7 +34,7 @@ The Home Page shows a header image of a past walk above a brief introductory par
 
 ### Upcoming Walks
 
-The page detailing upcoming walks shows a brief description of the next schedule walk, along with a map of the route created using OS Openspace Map Builder and embedded using the Openspace API. There is a menu which allows the user to switch between this map and others in the upcoming schedule. The next walk always displays as default when the page loads.
+The page detailing upcoming walks shows a brief description of the next schedule walk, along with a map of the route created using OS Openspace Map Builder and embedded using the Openspace API.
 
 ### Photo Galleries
 

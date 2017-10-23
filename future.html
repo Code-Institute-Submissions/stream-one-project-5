@@ -12,7 +12,6 @@
 	<!-- Start of OS Openspace Maps Code -->
 	<script type="text/javascript" src="https://openspace.ordnancesurvey.co.uk/osmapapi/openspace.js?key=5B2D6FA0BB4455B0E0530C6CA40A6A8D"></script>
 	<script type= "text/javascript" src="https://openspace.ordnancesurvey.co.uk/osmapapi/script/mapbuilder/basicmap.js"></script>
-	<script type= "text/javascript" src="https://openspace.ordnancesurvey.co.uk/osmapapi/script/mapbuilder/searchbox.js"></script>
 	<!-- End of OS Openspace Maps Code -->
 </head>
 
@@ -22,7 +21,7 @@
 		<h1>South West Walking</h1>
 		<nav id="menuBar">
 			<a href="index.html">Home Page</a>
-			<a href="future.html">Upcoming Walks</a>
+			<a href="future.html">Next Walk</a>
 			<a href="past.html">Photo Galleries</a>
 			<a href="advice.html">Walking Advice</a>
 			<a href="join.html">Join the Group</a>
@@ -30,42 +29,26 @@
 	</header>
 
 	<section id="pageContent">
-		<h2>Upcoming Walks</h2>
+		<h2>Next Walk</h2>
 
 		<section id="walkDetails">
+
 			<section class="walkSection">
-				<a class="switchLink" onclick="contentSwitcher('nov17')">NOV</a>
-				<a class="switchLink" onclick="contentSwitcher('dec17')">DEC</a>
-				<a class="switchLink" onclick="contentSwitcher('jan18')">JAN</a>
-				<a class="switchLink" onclick="contentSwitcher('feb18')">FEB</a>
-				<a class="switchLink" onclick="contentSwitcher('mar18')">MAR</a>
-				<a class="switchLink" onclick="contentSwitcher('apr18')">APR</a>
+				<h3>Saturday 11 November 2017<br />10.00 am</h3>
+				<p>Meet in the car park at the top of the hill just east of Dousland. We will walk up the route of the old Yelverton to Princetown railway, crossing the new Peekhill Bridge. We will stay on the old railway line until shortly after Ingra Tor, before turning east and then south-east past some hut circles to cross the main B3212 road. We will soon reach Black Tor and its impressive Logan Stone.</p>
+				<p>Dropping downhill towards the River Meavy, we will pick up the Devonport Leat at the point where an aqueduct carries it across the river. We will then follow the leat through the woods above Burrator Reservoir. Picking up the road for a short stretch below Leather Tor, we branch away briefly through the woods again and end with a short uphill climb via the road back to the car park. The route is relatively easy, although there is one steep downhill section.</p>
 			</section>
+
 			<section class="walkSection">
-				<section id="nov17" class="walkSwitcher">
-					<h3>Saturday 11 November 2017</h3>
-					<p>Meet at 10.00 am in the car park at the top of the hill just east of Dousland. We will walk up the route of the old Yelverton to Princetown railway, crossing the new Peekhill Bridge. We will stay on the old railway line until shortly after Ingra Tor, before turning south-east to cross the main B3212 road and reach Black Tor.</p>
-					<p>Meeting the Devonport Leat at the point where it crosses the River Meavy, we will follow the leat through the woods above Burrator Reservoir. Picking up the road below Leather Tor, we branch away briefly through the woods again and end with a short uphill climb via the road back to the car park. The route is relatively easy, although there is one steep downhill section.</p>
+				<section id="mapDisplay">
 					<!-- Inline styling needs to be checked - is there a better alternative? -->
-					<div id="futureMapHolder"><div id="map" style="width: 100%; height: 500px;"></div></div>
-					<script type="text/javascript" src="js/nov17.js"></script>
+					<div id="futureMapHolder">
+						<div id="map" style="width: 100%; height: 500px;"></div>
+						<script src="js/nov17.js"></script>
+					</div>
 				</section>
-				<section id="dec17" class="walkSwitcher">
-					<h3>Saturday 9 December 2017</h3>
-				</section>
-				<section id="jan18" class="walkSwitcher">
-					<h3>Saturday 13 January 2018</h3>
-				</section>
-				<section id="feb18" class="walkSwitcher">
-					<h3>Saturday 10 February 2018</h3>
-				</section>
-				<section id="mar18" class="walkSwitcher">
-					<h3>Saturday 10 March 2018</h3>
-				</section>
-				<section id="apr18" class="walkSwitcher">
-					<h3>Saturday 14 April 2018</h3>
-				</section>
-			</section>			
+			</section>	
+
 		</section>
 		
 	</section>
@@ -73,8 +56,6 @@
 	<footer>
 		<span id="footerText">&copy; 2017 South West Walking</span>
 	</footer>
-
-	<script src="js/switcher.js"></script>
 
 </body>
 
