@@ -10,7 +10,7 @@ There is currently one breakpoint set which is activated when the page width exc
 
 On the Home Page, Flexbox is used to arrange the information boxes and a minimum width of 200 pixels is set to ensure that the boxes do not become too narrow. Should the page width be such that the boxes would drop below 200 pixels, the further box to the right will drop below the others. Flexbox is also used in the membership form to show the two fieldsets alongside each other in the desktop display.
 
-On the Upcoming Walks page, the flex direction is initially set to column, in order to display the walk description and map below the switcher menu. In the desktop stylesheet, the direction is altered to row in order to show the menu and details side by side.
+On the Upcoming Walks and Photo Galleries pages, the flex direction is initially set to column, in order to display two sections of content one above the other. In the desktop stylesheet, the direction is altered to row in order to show the two sections side by side.
 
 ## JavaScript Functionality
 
@@ -34,7 +34,7 @@ The Home Page shows a header image of a past walk above a brief introductory par
 
 ### Upcoming Walks
 
-The page detailing upcoming walks shows a brief description of the next schedule walk, along with a map of the route created using OS Openspace Map Builder and embedded using the Openspace API.
+The page detailing upcoming walks shows a brief description of the next schedule walk, along with a map of the route created using OS Openspace Map Builder and embedded using the Openspace API. There are then short description of planned walks up to six months ahead.
 
 ### Photo Galleries
 
