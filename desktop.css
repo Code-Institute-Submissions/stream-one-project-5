@@ -62,3 +62,18 @@ fieldset {
 .fullImage img {
 	border: 10px solid white;
 }
+
+.switchLink {
+	margin: 20px;
+	width: 160px;
+	height: 120px;
+}
+
+.switchLink img {
+	width: 160px;
+	height: 120px;
+}
+
+.walkMonth {
+	font-size: 3em;
+}
