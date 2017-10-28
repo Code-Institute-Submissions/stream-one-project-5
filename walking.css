@@ -1,5 +1,5 @@
 html {
-	background-color: #f9f9f9;
+	background-color: #cccccc;
 }
 
 body {
@@ -211,6 +211,21 @@ footer {
 	width: 100%;
 	position: absolute;
 	top: -100%;
+	display: none;
+}
+
+.fadeIn {
+	animation-name: imageFader;
+	animation-duration: 2s;
+}
+
+@keyframes imageFader {
+	from {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 #pageContent {
@@ -299,6 +314,7 @@ fieldset {
 	background-color: #cccccc;
 	text-decoration: none;
 	position: relative;
+	cursor: pointer;
 }
 
 .switchLink img {
@@ -329,11 +345,17 @@ fieldset {
 	border-radius: 50%;
 	line-height: 100%;
 	padding-top: 20%;
+	text-shadow: 1px 1px black;
 }
 
 .walkMonth:hover {
-	background-color: rgba(204,204,204,0.7);
+    background: radial-gradient(
+    	rgba(255,255,255,0.7) 35%,
+    	rgba(204,204,204,0.6) 70%,
+    	rgba(153,153,153,0.5)
+     );
 	color: #336633;
+	transition: 0.5s;
 }
 
 #activeImage {
