@@ -1,22 +1,21 @@
 html {
-	background-color: #f9f9f9;
+	background-color: #f9fff9;
 }
 
 #mainHeader {
 	text-align: left;
-	padding: 5px 0 5px 0;
 }
 
 #mainHeader h1 {
-	padding-left: 10px;
 	font-size: 1.5em;
-	display: inline;
+	display: inline-block;
+	padding-left: 10px;
 }	
 
 #mainHeader a {
 	display: inline;
 	border: none;
-	padding-right: 10px;
+	padding: 0 5px 0 5px;
 }
 
 #mainHeader a:last-child{
@@ -25,13 +24,15 @@ html {
 
 #mainHeader a:hover {
 	text-decoration: underline;
-	color: white;
-	background-color: #339933;
+	color: #339933;
+	background-color: white;
+	padding: 10px 5px 10px 5px;
+	transition: 0.1s;
 }
 
 #menuBar {
 	float: right;
-	padding: 5px;
+	padding: 10px 10px 10px 0;
 }
 
 footer {
@@ -43,7 +44,8 @@ footer {
 #footerText {
 	padding-left: 10px;
 	position: absolute;
-	bottom: 5px;
+	bottom: 15px;
+	font-size: 1.2em;
 }
 
 #membershipBoxes {
@@ -88,4 +90,5 @@ fieldset {
 
 #social {
 	float: right;
+	margin-right: 10px;
 }
