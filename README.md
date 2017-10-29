@@ -2,7 +2,7 @@
  
 This is a project website for Code Institute Full Stack Development course Stream One. It is a sample website for a walking group based in the south-west of England, a small group which organises monthly walks in Devon and Cornwall both on moorland and along the coast path. 
 
-The website provides information for both existing and potential group members, covering future events and past walks as well as information about the hobby of walking itself.
+The website provides information for both existing and potential group members, covering future events and past walks as well as information about the hobby of walking itself. The site also gives links to the group's social media accounts in the footer of each page.
 
 ## Responsive Design
 
@@ -14,17 +14,19 @@ On the Upcoming Walks and Photo Galleries pages, the flex direction is initially
 
 ## JavaScript Functionality
 
-External scripts are used in the context of the OS Openspace API on both the Home Page and the Upcoming Walks page. A very basic validation script is used for both the quick contact form on the Home Page and the membership form on the Join the Group page.
+JavaScript is used on the Home Page to run the image switcher on the header image. A very basic validation script is used for both the quick contact form on the Home Page and the membership form on the Join the Group page.
 
 Further use of JavaScript is made on the Photo Galleries page by the inclusion of a content switcher. That script loads up the details of the most recent walk. There are links provided which when clicked, use a JavaScript function to display the details of the chosen walk while hiding all the others.
 
 The Photo Galleries page also features a lightbox script which allows a user to click a thumbnail image and display it at a larger size in the centre of the viewport. The script includes 'previous' and 'next' links to enable navigation between images and a 'close' link to remove the lightbox.
 
+External scripts are used in the context of the OS Openspace API on both the Home Page and the Upcoming Walks page.
+
 ## Site Content
 
 ### Home Page
 
-The Home Page shows a header image of a past walk above a brief introductory paragraph. Below that are three information boxes.
+The Home Page shows a header image of a past walk above a brief introductory paragraph. The header image uses JavaScript to rotate between a selection of images. Below the introduction are three information boxes.
 
 * The first of these shows the date of the next walk and a brief description of the route, along with a small map showing the starting point. There is a link to the Future Walks page where full details can be found.
 

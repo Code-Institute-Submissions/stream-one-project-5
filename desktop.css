@@ -36,11 +36,14 @@ html {
 
 footer {
 	text-align: left;
-	padding: 5px 0 5px 0;
+	padding: 5px 0 0 0;
+	position: relative;
 }
 
 #footerText {
 	padding-left: 10px;
+	position: absolute;
+	bottom: 5px;
 }
 
 #membershipBoxes {
@@ -81,4 +84,8 @@ fieldset {
 .walkMonth {
 	font-size: 3em;
 	text-shadow: 2px 2px black;
+}
+
+#social {
+	float: right;
 }
