@@ -289,7 +289,7 @@ fieldset {
 }
 
 .walkSection {
-	flex: 1;
+	flex-basis: content;
 	min-width: 250px;
 	margin: 20px 10px 0 10px;
 }
@@ -391,6 +391,7 @@ fieldset {
 	max-width: 800px;
 	height: auto;
 	border: 5px solid white;
+	box-shadow: 0px 0px 5px 5px #999999;
 	/* Positioning courtesy of
 	https://stackoverflow.com/questions/12665368/
 	center-image-in-html-viewport-without-javascript */

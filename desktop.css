@@ -68,6 +68,10 @@ fieldset {
 	flex-flow: row wrap;
 }
 
+.walkSection {
+	flex: 1;
+}
+
 .fullImage img {
 	border: 10px solid white;
 }
