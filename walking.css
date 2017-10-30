@@ -204,14 +204,10 @@ footer {
 
 #slider {
 	height: 25vw;
-	overflow: hidden;
-	position: relative;
 }
 
 .sliderImage {
 	width: 100%;
-	position: absolute;
-	top: -100%;
 	display: none;
 }
 
