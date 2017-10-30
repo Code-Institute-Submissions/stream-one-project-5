@@ -202,10 +202,6 @@ footer {
 	box-sizing: border-box;
 }
 
-#slider {
-	height: 25vw;
-}
-
 .sliderImage {
 	width: 100%;
 	display: none;
@@ -285,7 +281,7 @@ fieldset {
 }
 
 .walkSection {
-	flex-basis: content;
+	flex-basis: auto;
 	min-width: 250px;
 	margin: 20px 10px 0 10px;
 }
@@ -298,6 +294,7 @@ fieldset {
 .walkSection ul {
 	padding: 0;
 }
+
 
 .switchLink {
 	margin: 10px;
@@ -312,6 +309,7 @@ fieldset {
 	text-decoration: none;
 	position: relative;
 	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .switchLink img {
@@ -361,6 +359,7 @@ fieldset {
 
 .walkGallery {
 	display: inline-block;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .walkGallery img {
