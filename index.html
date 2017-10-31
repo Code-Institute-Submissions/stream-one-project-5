@@ -48,15 +48,15 @@
 		<section class="infoBox">
 			<h2>Last Walk</h2>
 			<h3>Saturday 14 October 2017</h3>
-			<p>We headed up from the old pump house to Great Mis Tor, before carefully crossing the River Walkham and returning via Merrivale quarry and stone row.</p>
+			<p>We headed from the old pump house near Princetown up to Great Mis Tor, before carefully crossing the River Walkham and returning via Merrivale quarry and stone row.</p>
 			<a class="infoLink" href="past.html">[Full Details]</a>
 			<img id="infoPic" src="img/oct17_home.jpg" alt="Last Walk" />
 		</section>
 
-		<section class="infoBox">
+		<section class="infoBox quickForm">
 			<h2>Quick Contact</h2>
 			<p>If you would like to join the group there is a <a class="textLink" href="join.html">membership form</a> available here. For other enquiries, please use the contact form below. Fields marked * are required.</p>
-			<form name="quickForm" id="quickForm" onsubmit="validateQuickForm()">
+			<form name="quickForm" method="post" id="quickForm" onsubmit="validateForm()">
 				<div class="formElement">Name*:</div> <input class="quickFormInput" type="text" name="fullName" required /><br />
 				<div class="formElement">E-Mail*:</div> <input class="quickFormInput" type="email" name="email" required /><br />
 				<div class="formElement">Telephone:</div> <input class="quickFormInput" type="tel" name="telephone" /><br />
@@ -92,7 +92,7 @@
 	<!-- End of OS Openspace Maps Code -->
 
 	<script type="text/javascript">
-		function validateQuickForm() {
+		function validateForm() {
 			alert ("Submission Successful");
 		}
 	</script>
