@@ -160,6 +160,10 @@ footer {
 	text-decoration: underline;
 }
 
+#map {
+	width: 100%;
+}
+
 #mapHolder {
 	border-top: 2px solid #339933;
 	width: 100%;
