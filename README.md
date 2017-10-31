@@ -22,6 +22,10 @@ The Photo Galleries page also features a lightbox script which allows a user to 
 
 External scripts are used in the context of the OS Openspace API on both the Home Page and the Upcoming Walks page.
 
+## File Structure
+
+All image files, CSS files and JavaScript files are separated into different directories for clarity and simplicity. Images are further separated depending upon where in the site they are used.
+
 ## Site Content
 
 ### Home Page

@@ -6,8 +6,8 @@
 	<title>Home Page | South West Walking</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="walking.css" />
-	<link rel="stylesheet" media="screen and (min-width: 801px)" href="desktop.css" />
+	<link rel="stylesheet" href="css/walking.css" />
+	<link rel="stylesheet" media="screen and (min-width: 801px)" href="css/desktop.css" />
 </head>
 
 <body>
@@ -41,8 +41,7 @@
 			<h3>Saturday 11 November 2017</h3>
 			<p>Meeting at the car park near Dousland at 10.00 am, we will head up the route of the old railway line towards Princetown before turning south and following the Devonport Leat back towards the car park.</p>
 			<a class="infoLink" href="future.html">[Full Details]</a>
-				<!-- Inline styling needs to be checked - is there a better alternative? -->
-			<div id="mapHolder"><div id="map" style="height: 190px;"></div></div>
+			<div id="mapHolder"><div id="homeMap"></div></div>
 		</section>
 
 		<section class="infoBox">
@@ -50,7 +49,7 @@
 			<h3>Saturday 14 October 2017</h3>
 			<p>We headed from the old pump house near Princetown up to Great Mis Tor, before carefully crossing the River Walkham and returning via Merrivale quarry and stone row.</p>
 			<a class="infoLink" href="past.html">[Full Details]</a>
-			<img id="infoPic" src="img/oct17_home.jpg" alt="Last Walk" />
+			<img id="infoPic" src="img/oct17/home.jpg" alt="Last Walk" />
 		</section>
 
 		<section class="infoBox quickForm">
@@ -80,23 +79,10 @@
 	<!-- Start of OS Openspace Maps Code -->
 	<script type="text/javascript" src="https://openspace.ordnancesurvey.co.uk/osmapapi/openspace.js?key=5B2D6FA0BB4455B0E0530C6CA40A6A8D"></script>
 	<script type= "text/javascript" src="https://openspace.ordnancesurvey.co.uk/osmapapi/script/mapbuilder/basicmap.js"></script>
-	<script type="text/javascript">
-		function homeMap() {
-			var options = {resolutions: [2500, 1000, 500, 200, 100, 50, 25, 10, 5, 4, 2.5, 2, 1]};
-			osMap = new OpenSpace.Map('map', options);
-			setglobaloptions();
-			osMap.setCenter(new OpenSpace.MapPoint(254382.5,68750),7);
-		}
-		window.onload = homeMap();
-	</script>
+	<script src="js/maps.js"></script>
 	<!-- End of OS Openspace Maps Code -->
 
-	<script type="text/javascript">
-		function validateForm() {
-			alert ("Submission Successful");
-		}
-	</script>
-
+	<script src="js/validation.js"></script>
 	<script src="js/slider.js"></script>
 
 </body>
