@@ -53,3 +53,13 @@ The Walking Advice page is primarily aimed at people who are new to the hobby. I
 ### Join the Group
 
 There is a specific page on the site for people who wish to join the group, which features a more detailed membership form. The form collects e-mail, telephone and postal contact details as well as asking about people's experiences of and preferences for walking. Such information can then be used to plan both the schedule of walks and the arrangement of transport to and from the starting point.
+
+## Deployment
+
+The site was deployed to GitHub pages very early in its development. The chief reason for this was to enable testing on other devices, specifically tablet and mobile, as development was being done on a PC.
+
+## Testing
+
+The site was tested on a variety of devices and on a number of different browsers. Forms were tested without input in the required fields in order to ensure that the validation message would not be displayed, and then with the required fields filled in to ensure that the message was displayed. 
+
+During the testing process, an issue was encountered whereby white space was showing below the month switcher menu on the Photo Galleries page. This was only happening on the mobile stylesheet on Chrome for Android, and only when either there were more than two month links above or the explanatory paragraph appeared below. The testing process did not produce any explanation for this white space and so it is currently assumed to be a bug in the browser.
