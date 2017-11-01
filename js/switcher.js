@@ -10,12 +10,10 @@ function contentSwitcher(month) {
 
 	/* Display the relevant gallery when a month is selected. */
 	} else {
-
 		/* Hide visible gallery by removing the activeGallery class. */
 		for (var i = 0; i < walkList.length; i++) {
 			walkList[i].classList.remove("activeGallery");
 		}
-
 		/* Display the chosen gallery by adding the activeGallery class. */
 		document.getElementById(month).classList.add("activeGallery");
 	}

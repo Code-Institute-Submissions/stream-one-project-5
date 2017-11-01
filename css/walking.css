@@ -126,7 +126,6 @@ footer {
 }
 
 .infoLink {
-	width: 100%;
 	padding: 0;
 	margin: 10px 0 10px 0;
 	text-align: center;
@@ -152,7 +151,6 @@ footer {
 .textLink a {
 	color: #0000ff;
 	text-decoration: none;
-	padding-bottom: 10px;
 }
 
 .textLink a:hover {
@@ -195,6 +193,10 @@ footer {
 	margin-top: 20px;
 }
 
+.quickForm {
+	position: relative;
+}
+
 #quickForm {
 	margin: 10px 20px 10px 20px;
 	box-sizing: border-box;
@@ -208,6 +210,30 @@ footer {
 	margin: 0 auto 0 auto;
 	width: 100%;
 	box-sizing: border-box;
+}
+
+.hiddenContent {
+	display: none;
+}
+
+#quickFormValidation {
+	width: 230px;
+	color: white;
+	background-color: #336633;
+	border: 2px solid #339933;
+	box-shadow: 0px 0px 5px 5px #669966;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#validationButton {
+	display: block;
+	text-align: center;
+	margin: 10px auto 10px auto;
+	overflow: visible;
 }
 
 .membershipFormInput {

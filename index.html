@@ -55,14 +55,21 @@
 		<section class="infoBox quickForm">
 			<h2>Quick Contact</h2>
 			<p>If you would like to join the group there is a <a class="textLink" href="join.html">membership form</a> available here. For other enquiries, please use the contact form below. Fields marked * are required.</p>
-			<form name="quickForm" id="quickForm" onsubmit="validateForm()">
-				<div class="formElement">Name*:</div> <input class="quickFormInput" type="text" name="fullName" required /><br />
-				<div class="formElement">E-Mail*:</div> <input class="quickFormInput" type="email" name="email" required /><br />
-				<div class="formElement">Telephone:</div> <input class="quickFormInput" type="tel" name="telephone" /><br />
-				<div class="formElement">Message*:</div> <textarea class="quickFormInput" rows="4" name="message" required ></textarea><br />
-				<input class="formElement" type="submit" value="Send Message" />
+			<form name="quickForm" id="quickForm">
+				<div class="formElement">Name*:</div> <input class="quickFormInput required" type="text" name="fullName" id="fullName" /><br />
+				<div class="formElement">E-Mail*:</div> <input class="quickFormInput required" type="email" name="email" id="emailAddress" /><br />
+				<div class="formElement">Telephone:</div> <input class="quickFormInput" type="tel" name="telephone" id="telephoneNumber" /><br />
+				<div class="formElement">Message*:</div> <textarea class="quickFormInput required" rows="4" name="message" id="messageText" ></textarea><br />
+				<input class="formElement" type="button" value="Send Message" onclick="validateForm()" />
 			</form>
+
+			<section id="quickFormValidation" class="hiddenContent">
+				<p id="validationMessage"></p>
+				<button id="validationButton" onclick="validateForm()">OK</button>
+			</section>
+
 		</section>
+
 
 	</section>
 

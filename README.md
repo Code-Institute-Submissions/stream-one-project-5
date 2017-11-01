@@ -2,7 +2,7 @@
  
 This is a project website for Code Institute Full Stack Development course Stream One. It is a sample website for a walking group based in the south-west of England, a small group which organises monthly walks in Devon and Cornwall both on moorland and along the coast path. 
 
-The website provides information for both existing and potential group members, covering future events and past walks as well as information about the hobby of walking itself. The site also gives links to the group's social media accounts in the footer of each page.
+The website provides information for both existing and potential group members. The site covers future events and past walks as well as information about the hobby of walking itself. The site also gives links to the group's social media accounts in the footer of each page.
 
 ## Responsive Design
 
@@ -20,7 +20,7 @@ Further use of JavaScript is made on the Photo Galleries page by the inclusion o
 
 The Photo Galleries page also features a lightbox script which allows a user to click a thumbnail image and display it at a larger size in the centre of the viewport. The script includes 'previous' and 'next' links to enable navigation between images and a 'close' link to remove the lightbox.
 
-External scripts are used in the context of the OS Openspace API on both the Home Page and the Upcoming Walks page.
+External scripts are used in the context of the OS Openspace API on both the Home Page and the Upcoming Walks page. One of these is accessed remotely from the OS Openspace website, the other is generated using OS Openspace Map Builder and is stored with the site's other JavaScript files.
 
 ## File Structure
 
@@ -36,11 +36,11 @@ The Home Page shows a header image of a past walk above a brief introductory par
 
 * The second information box gives information about the most recent walk and a preview photo, with a link to the Photo Galleries page where more pictures are available.
 
-* The final information box includes a simple contact form, for people who may not wish to join the group but who have an enquiry to send to the group organisers. The form just gives fields for basic contact information and a textbox for the message.
+* The final information box includes a simple contact form, for people who may not wish to join the group but who have an enquiry to send to the group organisers. The form just gives fields for basic contact information and a textbox for the message. As the scope of this project is front end only, the form does not submit but displays a validation message when the 'Send' button is clicked and all required fields are filled out.
 
 ### Upcoming Walks
 
-The page detailing upcoming walks shows a brief description of the next schedule walk, along with a map of the route created using OS Openspace Map Builder and embedded using the Openspace API. There are then short description of planned walks up to six months ahead.
+The page detailing upcoming walks shows a brief description of the next schedule walk, along with a map of the route created using Ordnance Survey (OS) Openspace Map Builder and embedded using the OS Openspace API. There are also short description of planned walks up to six months ahead.
 
 ### Photo Galleries
 
@@ -54,12 +54,14 @@ The Walking Advice page is primarily aimed at people who are new to the hobby. I
 
 There is a specific page on the site for people who wish to join the group, which features a more detailed membership form. The form collects e-mail, telephone and postal contact details as well as asking about people's experiences of and preferences for walking. Such information can then be used to plan both the schedule of walks and the arrangement of transport to and from the starting point.
 
+As with the contact form on the Home Page, the form does not submit as the scope of this project is front end only. It displays a validation message when the 'Send' button is clicked and all required fields are filled out.
+
 ## Deployment
 
-The site was deployed to GitHub pages very early in its development. The chief reason for this was to enable testing on other devices, specifically tablet and mobile, as development was being done on a PC.
+The site was deployed to GitHub pages very early in its development. The chief reason for this was to enable easy testing on other devices, specifically tablet and mobile, as development was being done on a PC. Once a new piece of functionality had been added and tested on a variety of browsers, a new commit was made to GitHub ensuring that the 'gh-pages' branch was up to date at all times.
 
 ## Testing
 
-The site was tested on a variety of devices and on a number of different browsers. Forms were tested without input in the required fields in order to ensure that the validation message would not be displayed, and then with the required fields filled in to ensure that the message was displayed. 
+The site was tested on a variety of devices and on a number of different browsers. Forms were tested both with and without input in the required fields in order to ensure that the correct validation message would be displayed.
 
 During the testing process, an issue was encountered whereby white space was showing below the month switcher menu on the Photo Galleries page. This was only happening on the mobile stylesheet on Chrome for Android, and only when either there were more than two month links above or the explanatory paragraph appeared below. The testing process did not produce any explanation for this white space and so it is currently assumed to be a bug in the browser.
