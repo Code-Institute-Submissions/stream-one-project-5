@@ -309,6 +309,14 @@ fieldset {
 	padding: 0;
 }
 
+.walkSwitcher {
+	display: none;
+}
+
+.activeGallery {
+	display: block;
+}
+
 .switchLink {
 	margin: 10px;
 	border: 1px solid #339933;

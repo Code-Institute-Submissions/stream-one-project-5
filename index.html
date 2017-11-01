@@ -55,12 +55,12 @@
 		<section class="infoBox quickForm">
 			<h2>Quick Contact</h2>
 			<p>If you would like to join the group there is a <a class="textLink" href="join.html">membership form</a> available here. For other enquiries, please use the contact form below. Fields marked * are required.</p>
-			<form name="quickForm" method="post" id="quickForm" onsubmit="validateForm()">
+			<form name="quickForm" id="quickForm" onsubmit="validateForm()">
 				<div class="formElement">Name*:</div> <input class="quickFormInput" type="text" name="fullName" required /><br />
 				<div class="formElement">E-Mail*:</div> <input class="quickFormInput" type="email" name="email" required /><br />
 				<div class="formElement">Telephone:</div> <input class="quickFormInput" type="tel" name="telephone" /><br />
 				<div class="formElement">Message*:</div> <textarea class="quickFormInput" rows="4" name="message" required ></textarea><br />
-				<input class="formElement" type="submit" value="Submit" />
+				<input class="formElement" type="submit" value="Send Message" />
 			</form>
 		</section>
 
@@ -68,7 +68,11 @@
 
 	<footer>
 		<section id="social">
-			<!-- Links to social media accounts - as these accounts do not exist the links direct to the home pages of the sites in question. -->
+			<!--
+				Links to social media accounts.
+				As these accounts do not exist the links direct
+				to the home pages of the sites in question.
+			-->
 			<a class="social facebook" href="http://www.facebook.com" target="_blank" alt="Facebook"></a>
 			<a class="social twitter" href="http://www.twitter.com" target="_blank" alt="Twitter"></a>
 			<a class="social instagram" href="http://www.instagram.com" target="_blank" alt="Instagram"></a>
@@ -77,14 +81,14 @@
 		<span id="footerText">&copy; 2017 South West Walking</span>
 	</footer>
 
+	<script src="js/validation.js"></script>
+	<script src="js/slider.js"></script>
+
 	<!-- Start of OS Openspace Maps Code -->
 	<script type="text/javascript" src="https://openspace.ordnancesurvey.co.uk/osmapapi/openspace.js?key=5B2D6FA0BB4455B0E0530C6CA40A6A8D"></script>
 	<script type= "text/javascript" src="https://openspace.ordnancesurvey.co.uk/osmapapi/script/mapbuilder/basicmap.js"></script>
 	<script src="js/maps.js"></script>
 	<!-- End of OS Openspace Maps Code -->
-
-	<script src="js/validation.js"></script>
-	<script src="js/slider.js"></script>
 
 </body>
 
