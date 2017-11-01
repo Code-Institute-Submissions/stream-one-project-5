@@ -60,12 +60,12 @@
 				<div class="formElement">E-Mail*:</div> <input class="quickFormInput required" type="email" name="email" id="emailAddress" /><br />
 				<div class="formElement">Telephone:</div> <input class="quickFormInput" type="tel" name="telephone" id="telephoneNumber" /><br />
 				<div class="formElement">Message*:</div> <textarea class="quickFormInput required" rows="4" name="message" id="messageText" ></textarea><br />
-				<input class="formElement" type="button" value="Send Message" onclick="validateForm()" />
+				<input class="formElement" type="button" value="Send Message" onclick="validateQuickForm()" />
 			</form>
 
-			<section id="quickFormValidation" class="hiddenContent">
+			<section id="formValidation" class="quickForm hiddenContent">
 				<p id="validationMessage"></p>
-				<button id="validationButton" onclick="validateForm()">OK</button>
+				<button id="validationButton" onclick="closeValidator()">OK</button>
 			</section>
 
 		</section>

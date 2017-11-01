@@ -10,6 +10,7 @@ body {
 	max-width: 1200px;
 }
 
+/* Media query for widescreen monitors. The maximum width of the style sheet is set as 1200 pixels. Any display wider than this will have left and right borders added, with a box-shadow effect. */
 @media screen and (min-width: 1201px) {
 	body {
 		border-left: 2px solid #339933;
@@ -216,17 +217,37 @@ footer {
 	display: none;
 }
 
-#quickFormValidation {
-	width: 230px;
+#formWrapper {
+	position: relative;
+	margin: 0 auto 10px auto;
+}
+
+#formWrapper p {
+	margin: 10px 20px 0 20px;
+	position: relative;
+}
+
+#formValidation {
 	color: white;
 	background-color: #336633;
-	border: 2px solid #339933;
-	box-shadow: 0px 0px 5px 5px #669966;
+	box-shadow: 0px 0px 5px 2px #339933;
 	position: absolute;
-	bottom: 20px;
-	left: 0;
 	right: 0;
+	bottom: 0;
+	left: 0;
 	margin: auto;
+}
+
+#formValidation p {
+	text-align: center;
+}
+
+.quickForm {
+	border-top: 2px solid #339933;
+}
+
+.membershipForm {
+	border: 2px solid #339933;
 }
 
 #validationButton {
@@ -300,10 +321,6 @@ fieldset {
 	max-width: 500px;
 	box-sizing: border-box;
 	text-align: left;
-}
-
-#membershipForm {
-	margin: 0 5% 10px 5%;
 }
 
 .submitButton {

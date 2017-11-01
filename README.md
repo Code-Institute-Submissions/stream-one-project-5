@@ -2,7 +2,7 @@
  
 This is a project website for Code Institute Full Stack Development course Stream One. It is a sample website for a walking group based in the south-west of England, a small group which organises monthly walks in Devon and Cornwall both on moorland and along the coast path. 
 
-The website provides information for both existing and potential group members. The site covers future events and past walks as well as information about the hobby of walking itself. The site also gives links to the group's social media accounts in the footer of each page.
+The website provides information for both existing and potential group members. The site covers future events and past walks as well as information about the hobby of walking itself. The site also gives links to the group's social media accounts in the footer of each page. Because these accounts do not exist, the links direct to the home page of the relevant site.
 
 ## Responsive Design
 
@@ -14,7 +14,7 @@ On the Upcoming Walks and Photo Galleries pages, the flex direction is initially
 
 ## JavaScript Functionality
 
-JavaScript is used on the Home Page to run the image switcher on the header image. A very basic validation script is used for both the quick contact form on the Home Page and the membership form on the Join the Group page.
+JavaScript is used on the Home Page to run the image switcher on the header image. A validation script is used for both the quick contact form on the Home Page and the membership form on the Join the Group page. These alert the user if a required field has been left empty, or confirm submission of the form if it has been filled in correctly.
 
 Further use of JavaScript is made on the Photo Galleries page by the inclusion of a content switcher. That script loads up the details of the most recent walk. There are links provided which when clicked, use a JavaScript function to display the details of the chosen walk while hiding all the others.
 
@@ -36,7 +36,7 @@ The Home Page shows a header image of a past walk above a brief introductory par
 
 * The second information box gives information about the most recent walk and a preview photo, with a link to the Photo Galleries page where more pictures are available.
 
-* The final information box includes a simple contact form, for people who may not wish to join the group but who have an enquiry to send to the group organisers. The form just gives fields for basic contact information and a textbox for the message. As the scope of this project is front end only, the form does not submit but displays a validation message when the 'Send' button is clicked and all required fields are filled out.
+* The final information box includes a simple contact form, for people who may not wish to join the group but who have an enquiry to send to the group organisers. The form just gives fields for basic contact information and a textbox for the message. As the scope of this project is front end only, the form does not submit but displays a validation message when the 'Send Message' button is clicked. This message either gives a warning if a required field has been left empty or confirms successful submission of the form.
 
 ### Upcoming Walks
 
@@ -54,7 +54,11 @@ The Walking Advice page is primarily aimed at people who are new to the hobby. I
 
 There is a specific page on the site for people who wish to join the group, which features a more detailed membership form. The form collects e-mail, telephone and postal contact details as well as asking about people's experiences of and preferences for walking. Such information can then be used to plan both the schedule of walks and the arrangement of transport to and from the starting point.
 
-As with the contact form on the Home Page, the form does not submit as the scope of this project is front end only. It displays a validation message when the 'Send' button is clicked and all required fields are filled out.
+As with the contact form on the Home Page, the form does not submit as the scope of this project is front end only. It gives the same validation message when the button is clicked, either giving a warning if a required field has been left empty or confirming successful submission of the form. Additionally, some further alerts are set which will be shown if a particular option has been chosen in the form. This allows group organisers to provide information which may be of interest to the person who is joining.
+
+## External Code
+
+Use of external code was made through the OS Openspace maps. Using these maps in the website requires the inclusion of one external JavaScript file, hosted by OS Openspace, which generates the maps. Additionally, the Openspace Map Builder generates JavaScript code which sets the centre point of the map and if required displays the planned route as a line on the map. Once generated, this code needs to be stored on the website server in a separate JavaScript file.
 
 ## Deployment
 

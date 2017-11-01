@@ -28,43 +28,53 @@
 		<p>If you would like to join the group, please fill in the form below. We will add you to our mailing lists and contact you with details of each walk as well as arranging transport if required.</p>
 		<p>Fields marked * are required.</p>
 
-		<form name="membershipForm" id="membershipForm" onsubmit="validateForm()">
-			<div id="membershipBoxes">
-				<fieldset class="membershipSection">
-					<legend>Contact Details</legend>
-					<div class="formElement">Name*:</div> <input class="membershipFormInput" type="text" name="fullName" required /><br />
-					<div class="formElement">E-Mail*:</div> <input class="membershipFormInput" type="email" name="email" required /><br />
-					<div class="formElement">Telephone:</div> <input class="membershipFormInput" type="tel" name="telephone" /><br />
-					<div class="formElement">Address Line 1:</div> <input class="membershipFormInput" type="text" name="address1" /><br />
-					<div class="formElement">Address Line 2:</div> <input class="membershipFormInput" type="text" name="address2" /><br />
-					<div class="formElement">Town/City:</div> <input class="membershipFormInput" type="text" name="townCity" /><br />
-					<div class="formElement">County:</div> <input class="membershipFormInput" type="text" name="county" /><br />
-					<div class="formElement">Post Code:</div> <input class="membershipFormInput" type="text" name="postCode" /><br />
-				</fieldset>
-				<fieldset class="membershipSection">
-					<legend>Walking Details</legend>
-					<div class="formElement">Experience:</div>
-					 <input type="radio" name="experience" value="Beginner" /> Beginner<br />
-					 <input type="radio" name="experience" value="Intermediate" /> Medium<br />
-					 <input type="radio" name="experience" value="Experienced" /> Experienced<br />
-					<div class="formElement">Interests (select all that apply):</div>
-					 <input type="checkbox" name="interests" value="Dartmoor" /> Dartmoor<br />
-					 <input type="checkbox" name="interests" value="Bodmin Moor" /> Bodmin Moor<br />
-					 <input type="checkbox" name="interests" value="Exmoor" /> Exmoor<br />
-					 <input type="checkbox" name="interests" value="Coast Path Devon" /> Coast Path (Devon)<br />
-					 <input type="checkbox" name="interests" value="Coast Path Cornwall" /> Coast Path (Cornwall)<br />
-					<div class="formElement">Do You Require Transport</div>
-					 <input type="radio" name="transport" value="Yes" /> Yes
-					 <input type="radio" name="transport" value="No" /> No
-					<br />
-					<div class="formElement">Can You Offer Lifts to Others?</div>
-					 <input type="radio" name="lifts" value="Yes" /> Yes
-					 <input type="radio" name="lifts" value="No" /> No
-					<br />
-				</fieldset>
-			</div>
-			<input class="formElement submitButton" type="submit" value="Join the Group" />
-		</form>
+		<section id="formWrapper">
+
+			<form name="membershipForm" id="membershipForm">
+				<div id="membershipBoxes">
+					<fieldset class="membershipSection">
+						<legend>Contact Details</legend>
+						<div class="formElement">Name*:</div> <input class="membershipFormInput required" type="text" id="fullName" name="fullName" /><br />
+						<div class="formElement">E-Mail*:</div> <input class="membershipFormInput required" type="email" id="emailAddress" name="email" /><br />
+						<div class="formElement">Telephone:</div> <input class="membershipFormInput" type="tel" id="telephoneNumber" name="telephone" /><br />
+						<div class="formElement">Address Line 1:</div> <input class="membershipFormInput" type="text" id="addressLine1" name="address1" /><br />
+						<div class="formElement">Address Line 2:</div> <input class="membershipFormInput" type="text" id="addressLine2" name="address2" /><br />
+						<div class="formElement">Town/City:</div> <input class="membershipFormInput" type="text" id="townCity" name="townCity" /><br />
+						<div class="formElement">County:</div> <input class="membershipFormInput" type="text" id="county" name="county" /><br />
+						<div class="formElement">Post Code:</div> <input class="membershipFormInput" type="text" id="postCode" name="postCode" /><br />
+					</fieldset>
+					<fieldset class="membershipSection">
+						<legend>Walking Details</legend>
+						<div class="formElement">Experience:</div>
+						 <input type="radio" name="experience" id="beginner" value="Beginner" /> Beginner<br />
+						 <input type="radio" name="experience" id="intermediate" value="Intermediate" /> Medium<br />
+						 <input type="radio" name="experience" id="experienced" value="Experienced" /> Experienced<br />
+						<div class="formElement">Interests (select all that apply):</div>
+						 <input type="checkbox" name="interests" id="dartmoor" value="Dartmoor" /> Dartmoor<br />
+						 <input type="checkbox" name="interests" id="bodminMoor" value="Bodmin Moor" /> Bodmin Moor<br />
+						 <input type="checkbox" name="interests" id="exmoor" value="Exmoor" /> Exmoor<br />
+						 <input type="checkbox" name="interests" id="coastPathDevon" value="Coast Path Devon" /> Coast Path (Devon)<br />
+						 <input type="checkbox" name="interests" id="coastPathCornwall" value="Coast Path Cornwall" /> Coast Path (Cornwall)<br />
+						<div class="formElement">Do You Require Transport</div>
+						 <input type="radio" name="transport" id="transportYes" value="Yes" /> Yes
+						 <input type="radio" name="transport" id="transportNo" value="No" /> No
+						 <br />
+						<div class="formElement">Can You Offer Lifts to Others?</div>
+						 <input type="radio" name="lifts" id="liftsYes" value="Yes" /> Yes
+						 <input type="radio" name="lifts" id="liftsNo" value="No" /> No
+						 <br />
+					</fieldset>
+				</div>
+				<input class="formElement" type="button" value="Join the Group" onclick="validateMembershipForm()" />
+			</form>
+
+			<section id="formValidation" class="membershipForm hiddenContent">
+				<p id="validationMessage"></p>
+				<p id="newMemberInformation"></p>
+				<button id="validationButton" onclick="closeValidator()">OK</button>
+			</section>
+
+		</section>
 
 	</section>
 
