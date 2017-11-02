@@ -3,10 +3,10 @@ function validateQuickForm() {
 	var requiredFields = document.getElementsByClassName("required");
 	for (var i = 0; i < requiredFields.length; i++) {
 		if (requiredFields[i].value === "") {
-			document.getElementById("validationMessage").innerHTML = "One or more required fields has been left blank. Please ensure all required fields are filled in and re-send your message.";
+			document.getElementById("validationMessage").textContent = "One or more required fields has been left blank. Please ensure all required fields are filled in and re-send your message.";
 			break;
 		} else {
-			document.getElementById("validationMessage").innerHTML = "Thank you for your message. We will be in touch as soon as possible.";
+			document.getElementById("validationMessage").textContent = "Thank you for your message. We will be in touch as soon as possible.";
 		}
 	}
 }
@@ -16,9 +16,10 @@ function validateMembershipForm() {
 	var requiredFields = document.getElementsByClassName("required");
 	for (var i = 0; i < requiredFields.length; i++) {
 		if (requiredFields[i].value === "") {
-			document.getElementById("validationMessage").innerHTML = "One or more required fields has been left blank. Please ensure all required fields are filled in and re-submit the form.";
+			document.getElementById("validationMessage").textContent = "One or more required fields has been left blank. Please ensure all required fields are filled in and re-submit the form.";
+			break;
 		} else {
-			document.getElementById("validationMessage").innerHTML = "Welcome to the group. You have been added to our mailing list to receive reminders about upcoming events. We look forward to seeing you soon!";
+			document.getElementById("validationMessage").textContent = "Welcome to the group. You have been added to our mailing list to receive reminders about upcoming events. We look forward to seeing you soon!";
 
 			var newMemberMessages = [
 				{formElement: "beginner",
@@ -31,7 +32,7 @@ function validateMembershipForm() {
 
 			for (var j = 0; j < newMemberMessages.length; j++) {
 				if (document.getElementById(newMemberMessages[j].formElement).checked == true) {
-					document.getElementById("newMemberInformation").innerHTML = newMemberMessages[j].message;
+					document.getElementById("newMemberInformation").textContent = newMemberMessages[j].message;
 					break;
 				}
 			}
@@ -41,5 +42,5 @@ function validateMembershipForm() {
 
 function closeValidator() {
 	document.getElementById("formValidation").classList.add("hiddenContent");
-	document.getElementById("newMemberInformation").innerHTML = "";
+	document.getElementById("newMemberInformation").textContent = "";
 }

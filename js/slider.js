@@ -6,14 +6,17 @@ function imageSlider() {
 	var imageSlider = document.getElementsByClassName("sliderImage");
 
 	for (var i = 0; i < imageSlider.length; i++) {
-		imageSlider[i].style.display = "none";
+		imageSlider[i].classList.add("hiddenContent");
+		imageSlider[i].classList.remove("activeContent");
 	}
 
 	if (currentImage >= imageSlider.length) {
 		currentImage = 0;
 	}
 
-	imageSlider[currentImage].style.display = "block";
+	imageSlider[currentImage].classList.remove("hiddenContent");
+	imageSlider[currentImage].classList.add("activeContent");
+	
 	currentImage++;
 }
 

@@ -10,7 +10,10 @@ body {
 	max-width: 1200px;
 }
 
-/* Media query for widescreen monitors. The maximum width of the style sheet is set as 1200 pixels. Any display wider than this will have left and right borders added, with a box-shadow effect. */
+/*
+Media query for widescreen monitors. The maximum width of the body is set as 1200 pixels.
+Any display wider than this will have left and right borders added, with a box-shadow effect.
+*/
 @media screen and (min-width: 1201px) {
 	body {
 		border-left: 2px solid #339933;
@@ -217,6 +220,10 @@ footer {
 	display: none;
 }
 
+.activeContent {
+	display: block;
+}
+
 #formWrapper {
 	position: relative;
 	margin: 0 auto 10px auto;
@@ -265,7 +272,6 @@ footer {
 
 .sliderImage {
 	width: 100%;
-	display: none;
 }
 
 .fadeIn {

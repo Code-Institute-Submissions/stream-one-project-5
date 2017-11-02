@@ -54,7 +54,7 @@ The Walking Advice page is primarily aimed at people who are new to the hobby. I
 
 There is a specific page on the site for people who wish to join the group, which features a more detailed membership form. The form collects e-mail, telephone and postal contact details as well as asking about people's experiences of and preferences for walking. Such information can then be used to plan both the schedule of walks and the arrangement of transport to and from the starting point.
 
-As with the contact form on the Home Page, the form does not submit as the scope of this project is front end only. It gives the same validation message when the button is clicked, either giving a warning if a required field has been left empty or confirming successful submission of the form. Additionally, some further alerts are set which will be shown if a particular option has been chosen in the form. This allows group organisers to provide information which may be of interest to the person who is joining.
+As with the contact form on the Home Page, the form does not submit as the scope of this project is front end only. It gives the same validation message when the button is clicked, either giving a warning if a required field has been left empty or confirming successful submission of the form. Additionally, some further messages are set which will be shown if a particular option has been chosen in the form. This allows group organisers to provide information which may be of interest to the person who is joining. Only the first applicable message will be shown in order to prevent the alert from being excessively large.
 
 ## External Code
 
