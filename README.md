@@ -6,7 +6,7 @@ The website provides information for both existing and potential group members. 
 
 ## Responsive Design
 
-There is currently one breakpoint set which is activated when the page width exceeds 800px. This switches from a horizontal menu to a vertical menu and also changes the header and footer text from left to centre aligned.
+There is one breakpoint set which is activated when the page width exceeds 800px. This switches from a horizontal menu to a vertical menu and also changes the header and footer text from left to centre aligned.
 
 On the Home Page, Flexbox is used to arrange the information boxes and a minimum width of 200 pixels is set to ensure that the boxes do not become too narrow. Should the page width be such that the boxes would drop below 200 pixels, the further box to the right will drop below the others. Flexbox is also used in the membership form to show the two fieldsets alongside each other in the desktop display.
 
@@ -18,7 +18,7 @@ JavaScript is used on the Home Page to run the image switcher on the header imag
 
 Further use of JavaScript is made on the Photo Galleries page by the inclusion of a content switcher. That script loads up the details of the most recent walk. There are links provided which when clicked, use a JavaScript function to display the details of the chosen walk while hiding all the others.
 
-The Photo Galleries page also features a lightbox script which allows a user to click a thumbnail image and display it at a larger size in the centre of the viewport. The script includes 'previous' and 'next' links to enable navigation between images and a 'close' link to remove the lightbox.
+The Photo Galleries page also features a lightbox-style script which allows a user to click a thumbnail image and display it at a larger size in the centre of the viewport. The script includes 'previous' and 'next' links to enable navigation between images and a 'close' link to remove the image viewer.
 
 External scripts are used in the context of the OS Openspace API on both the Home Page and the Upcoming Walks page. One of these is accessed remotely from the OS Openspace website, the other is generated using OS Openspace Map Builder and is stored with the site's other JavaScript files.
 
@@ -44,7 +44,9 @@ The page detailing upcoming walks shows a brief description of the next schedule
 
 ### Photo Galleries
 
-The galleries page gives a brief recap of the most recent walk, along with a short gallery of photos taken along the route. There is a menu identical to that on the Upcoming Walks page, enabling the user to switch between all the available galleries. By default, the most recent walk will load first. There is a lightbox script which enables photos to be viewed at a larger size.
+The galleries page gives a brief recap of the most recent walk, along with a short gallery of photos taken along the route. There is a menu identical to that on the Upcoming Walks page, enabling the user to switch between all the available galleries. By default, the most recent walk will load first.
+
+There is a lightbox script which enables photos to be viewed at a larger size. When the script is activated, there are 'previous' and 'next' links to navigate between the pictures in the current gallery and a link to close the viewer. The 'previous' and 'next' links are disabled on the first and last pictures in a gallery respectively.
 
 ### Walking Advice
 

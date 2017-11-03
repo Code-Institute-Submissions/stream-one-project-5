@@ -1,11 +1,12 @@
 /* Create global variables for gallery month and chosen image to enable use between functions. */
 var chosenImage;
 var activeMonth;
+var activeGallery;
 
 /* Function for opening lightbox when an image is clicked. */
 function openBox(month, imagePosition) {
 	/* Set array for photos in the gallery. */
-	var walkGallery = document.getElementsByClassName("walkGallery");
+	activeGallery = document.getElementsByClassName(month);
 
 	/* When an image is clicked, display the lightbox element. */
 	document.getElementById("lightbox").classList.remove("hiddenContent");
@@ -18,7 +19,7 @@ function openBox(month, imagePosition) {
 	/* Hide the 'previous' icon if the first image is chosen and the 'next' icon if the last image is chosen. */
 	if (chosenImage === 1) {
 		document.getElementById("previousImage").classList.add("hiddenContent");
-	} else if (chosenImage === walkGallery.length) {
+	} else if (chosenImage === activeGallery.length) {
 		document.getElementById("nextImage").classList.add("hiddenContent");
 	}
 }
@@ -26,11 +27,8 @@ function openBox(month, imagePosition) {
 /* After an image is selected, the user can move back to the previous image. */
 function previousImage() {
 
-	/* Set array for photos in the gallery. */
-	var walkGallery = document.getElementsByClassName("walkGallery");
-
 	/* Display the 'next' icon if moving away from the last image. */
-	if (chosenImage === walkGallery.length) {
+	if (chosenImage === activeGallery.length) {
 		document.getElementById("nextImage").classList.remove("hiddenContent");
 	}
 
@@ -48,9 +46,6 @@ function previousImage() {
 /* After an image is selected, the user can move on to the next image. */
 function nextImage() { 
 
-	/* Set array for photos in the gallery. */
-	var walkGallery = document.getElementsByClassName("walkGallery");
-
 	/* Display the 'previous' icon if moving away from the first image. */
 	if (chosenImage === 1) {
 		document.getElementById("previousImage").classList.remove("hiddenContent");
@@ -61,7 +56,7 @@ function nextImage() {
 	document.getElementById("boxImage").innerHTML = '<img src="img/' + activeMonth + '/' + chosenImage +'.jpg" alt="Walk Image" />';
 
 	/* Hide the 'next' icon if the new image is the last one. */
-	if (chosenImage === walkGallery.length) {
+	if (chosenImage === activeGallery.length) {
 		document.getElementById("nextImage").classList.add("hiddenContent");
 	} 
 
