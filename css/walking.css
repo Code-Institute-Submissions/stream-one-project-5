@@ -167,19 +167,15 @@ footer {
 	height: 190px;
 }
 
-#futureMap {
-	width: 100%;
-	height: 500px;
-}
-
 #mapHolder {
 	border-top: 2px solid #339933;
 	width: 100%;
 }
 
-#futureMapHolder {
-	border: 2px solid #339933;
+.futureMap {
 	width: 100%;
+	height: 500px;
+	border: 2px solid #339933;
 	box-sizing: border-box;
 }
 
@@ -220,7 +216,7 @@ footer {
 	display: none;
 }
 
-.activeContent {
+.blockContent {
 	display: block;
 }
 
@@ -422,10 +418,6 @@ fieldset {
      );
 	color: #336633;
 	transition: 0.5s;
-}
-
-#activeImage {
-	display: none;
 }
 
 .walkGallery {

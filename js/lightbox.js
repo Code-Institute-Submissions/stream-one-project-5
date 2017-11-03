@@ -1,55 +1,75 @@
-/* Set variable to control activeImage element. */
-var lightbox = document.getElementById("activeImage");
-
-/* Set array for photos in the gallery. */
-var walkGallery = document.getElementsByClassName("walkGallery");
-
 /* Create global variables for gallery month and chosen image to enable use between functions. */
 var chosenImage;
 var activeMonth;
 
-/* Set variable with HTML for lightbox controls. */
-var boxControls = '\
-	<div id="boxCloser" onclick="closeBox()">&times;</div>\
-	<div id="previousImage" onclick="previousImage()">&#10094;&#10094;</div>\
-	<div id="nextImage" onclick="nextImage()">&#10095;&#10095;</div>\
-	';
-
 /* Function for opening lightbox when an image is clicked. */
 function openBox(month, imagePosition) {
-	/* When an image is clicked, display the activeImage element. */
-	lightbox.style.display = "block";
+	/* Set array for photos in the gallery. */
+	var walkGallery = document.getElementsByClassName("walkGallery");
 
-	/* Select the correct image from the walkGallery array and put its HTML in the activeImage element. */
+	/* When an image is clicked, display the lightbox element. */
+	document.getElementById("lightbox").classList.remove("hiddenContent");
+
+	/* Select an image from the gallery and put its HTML in the lightbox element. */
 	chosenImage = imagePosition;
 	activeMonth = month;
-	lightbox.innerHTML = boxControls + '<img src="img/' + month + '/' + imagePosition +'.jpg" alt="Walk Image" />';
+	document.getElementById("boxImage").innerHTML = '<img src="img/' + month + '/' + imagePosition +'.jpg" alt="Walk Image" />';
+
+	/* Hide the 'previous' icon if the first image is chosen and the 'next' icon if the last image is chosen. */
 	if (chosenImage === 1) {
-		document.getElementById("previousImage").style.display = "none";
+		document.getElementById("previousImage").classList.add("hiddenContent");
 	} else if (chosenImage === walkGallery.length) {
-		document.getElementById("nextImage").style.display = "none";
+		document.getElementById("nextImage").classList.add("hiddenContent");
 	}
 }
 
 /* After an image is selected, the user can move back to the previous image. */
 function previousImage() {
-	chosenImage--;
-	lightbox.innerHTML = boxControls + '<img src="img/' + activeMonth + '/' + chosenImage +'.jpg" alt="Walk Image" />';
-	if (chosenImage === 1) {
-		document.getElementById("previousImage").style.display = "none";
+
+	/* Set array for photos in the gallery. */
+	var walkGallery = document.getElementsByClassName("walkGallery");
+
+	/* Display the 'next' icon if moving away from the last image. */
+	if (chosenImage === walkGallery.length) {
+		document.getElementById("nextImage").classList.remove("hiddenContent");
 	}
+
+	/* Choose the previous image and put its HTML in the lightbox element. */
+	chosenImage--;
+	document.getElementById("boxImage").innerHTML = '<img src="img/' + activeMonth + '/' + chosenImage +'.jpg" alt="Walk Image" />';
+
+	/* Hide the 'previous' icon if the new image is the first one. */
+	if (chosenImage === 1) {
+		document.getElementById("previousImage").classList.add("hiddenContent");
+	} 
+
 }
 
 /* After an image is selected, the user can move on to the next image. */
 function nextImage() { 
-	chosenImage++;
-	lightbox.innerHTML = boxControls + '<img src="img/' + activeMonth + '/' + chosenImage +'.jpg" alt="Walk Image" />';
-	if (chosenImage === walkGallery.length) {
-		document.getElementById("nextImage").style.display = "none";
+
+	/* Set array for photos in the gallery. */
+	var walkGallery = document.getElementsByClassName("walkGallery");
+
+	/* Display the 'previous' icon if moving away from the first image. */
+	if (chosenImage === 1) {
+		document.getElementById("previousImage").classList.remove("hiddenContent");
 	}
+
+	/* Choose the next image and put its HTML in the lightbox element. */
+	chosenImage++;
+	document.getElementById("boxImage").innerHTML = '<img src="img/' + activeMonth + '/' + chosenImage +'.jpg" alt="Walk Image" />';
+
+	/* Hide the 'next' icon if the new image is the last one. */
+	if (chosenImage === walkGallery.length) {
+		document.getElementById("nextImage").classList.add("hiddenContent");
+	} 
+
 }
 
-/* When the close icon is clicked, remove the image HTML from the activeImage element and hide it. */
+/* When the close icon is clicked, hide the lightbox element and ensure that both the 'previous' and 'next' icons do not remain hidden. */
 function closeBox() {
-	lightbox.style.display = "none";
+	document.getElementById("lightbox").classList.add("hiddenContent");
+	document.getElementById("previousImage").classList.remove("hiddenContent");
+	document.getElementById("nextImage").classList.remove("hiddenContent");
 }

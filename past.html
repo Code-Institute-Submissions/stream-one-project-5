@@ -100,7 +100,13 @@
 					<h3>Saturday 13 May 2017</h3>
 				</section>
 
-				<section id="activeImage" class="lightsDown fullImage">
+				<section id="lightbox" class="lightsDown hiddenContent">
+					<div id="boxControls">
+						<div id="boxCloser" onclick="closeBox()">&times;</div>
+						<div id="previousImage" class="changeImage" onclick="previousImage()">&#10094;&#10094;</div>
+						<div id="nextImage" class="changeImage" onclick="nextImage()">&#10095;&#10095;</div>
+					</div>
+					<div id="boxImage" class="fullImage"></div>
 				</section>
 
 			</section>			
