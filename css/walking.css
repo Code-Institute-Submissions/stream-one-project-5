@@ -445,9 +445,8 @@ fieldset {
 }
 
 .fullImage img {
-	width: 75%;
-	max-width: 800px;
-	height: auto;
+	max-width: 75%;
+	max-height: 90%;
 	border: 5px solid white;
 	box-shadow: 0px 0px 5px 5px #999999;
 	/* Positioning courtesy of
@@ -465,7 +464,7 @@ fieldset {
 	position: absolute;
 	right: 20px;
 	font-weight: bold;
-	font-size: 350%;
+	font-size: 3.5em;
 	color: #999999;
 	cursor: pointer;
 }
@@ -479,9 +478,10 @@ fieldset {
 	left: 20px;
 	bottom: 10px;
 	font-weight: bold;
-	font-size: 250%;
+	font-size: 2.5em;
 	color: #999999;
 	cursor: pointer;
+	text-align: right;
 }
 
 #nextImage {
@@ -489,9 +489,16 @@ fieldset {
 	right: 20px;
 	bottom: 10px;
 	font-weight: bold;
-	font-size: 250%;
+	font-size: 2.5em;
 	color: #999999;
 	cursor: pointer;
+}
+
+.controlText {
+	text-align: center;
+	font-size: 0.4em;
+	margin: 0;
+	padding: 0;
 }
 
 .social {
