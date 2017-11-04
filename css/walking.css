@@ -444,6 +444,11 @@ fieldset {
 	left: 0;
 }
 
+.fullImage {
+	max-width: 75%;
+	max-height: 90%;
+}
+
 .fullImage img {
 	max-width: 75%;
 	max-height: 90%;
