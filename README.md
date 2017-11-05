@@ -8,7 +8,7 @@ The website provides information for both existing and potential group members. 
 
 There is one breakpoint set which is activated when the page width exceeds 800px. This switches from a horizontal menu to a vertical menu and also changes the header and footer text from left to centre aligned.
 
-On the Home Page, Flexbox is used to arrange the information boxes and a minimum width of 200 pixels is set to ensure that the boxes do not become too narrow. Should the page width be such that the boxes would drop below 200 pixels, the further box to the right will drop below the others. Flexbox is also used in the membership form to show the two fieldsets alongside each other in the desktop display.
+On the Home Page, Flexbox is used to arrange the information boxes and a minimum width of 250 pixels is set to ensure that the boxes do not become too narrow. Should the page width be such that the boxes would drop below 250 pixels, the furthest box to the right will drop below the others. Flexbox is also used in the membership form to show the two fieldsets alongside each other in the desktop display.
 
 On the Upcoming Walks and Photo Galleries pages, the flex direction is initially set to column, in order to display two sections of content one above the other. In the desktop stylesheet, the direction is altered to row in order to show the two sections side by side.
 
@@ -30,7 +30,7 @@ All image files, CSS files and JavaScript files are separated into different dir
 
 ### Home Page
 
-The Home Page shows a header image of a past walk above a brief introductory paragraph. The header image uses JavaScript to rotate between a selection of images. Below the introduction are three information boxes.
+The Home Page shows a header image of a past walk above a brief introductory paragraph. The header image uses JavaScript to rotate between a selection of images. The file size of these images has been reduced with the intention of improving the loading time of the page while not compromising the quality of the photographs. Below the introductory paragraph are three information boxes.
 
 * The first of these shows the date of the next walk and a brief description of the route, along with a small map showing the starting point. There is a link to the Future Walks page where full details can be found.
 
