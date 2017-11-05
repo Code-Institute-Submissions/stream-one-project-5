@@ -88,6 +88,10 @@ fieldset {
 	height: 120px;
 }
 
+.switchLink:hover {
+	box-shadow: 0px 0px 5px 10px #669966;
+}
+
 .walkMonth {
 	font-size: 3em;
 	text-shadow: 2px 2px black;

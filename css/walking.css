@@ -81,7 +81,7 @@ footer {
 	padding: 5px 0 5px 0;
 }
 
-#intro {
+#homeIntro {
 	background-color: white;
 	border-bottom: 2px solid #339933;
 	box-shadow: 0px 2px 5px 0px #669966;
@@ -89,7 +89,7 @@ footer {
 	padding: 20px;
 }
 
-#intro h2 {
+#homeIntro h2 {
 	font-size: 1.5em;
 	margin: 0;
 	padding: 0;
@@ -249,8 +249,12 @@ footer {
 	border-top: 2px solid #339933;
 }
 
-.membershipForm {
-	border: 2px solid #339933;
+fieldset {
+	margin: 0 auto 10px auto;
+	max-width: 500px;
+	box-sizing: border-box;
+	text-align: left;
+	border: ridge #339933;
 }
 
 #validationButton {
@@ -318,14 +322,6 @@ footer {
 	box-shadow: 5px 0 5px 0 #669966;
 }
 
-fieldset {
-	margin: 0 auto 10px auto;
-	max-width: 500px;
-	box-sizing: border-box;
-	text-align: left;
-	border: ridge #339933;
-}
-
 .submitButton {
 	width: 100%;
 	max-width: 500px;
@@ -386,7 +382,7 @@ fieldset {
 }
 
 .switchLink:hover {
-	box-shadow: 0px 0px 5px 10px #669966;
+	box-shadow: 0px 0px 5px 7px #669966;
 	transition: 0.5s;
 }
 
@@ -423,15 +419,22 @@ fieldset {
 .walkGallery {
 	display: inline-block;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	border: 2px solid #339933;
+	box-shadow: 0px 0px 5px 2px #669966;
+	margin: 10px;
+	background-color: rgba(0,0,0);
 }
 
 .walkGallery img {
 	width: 200px;
 	height: 150px;
-	border: 2px solid #339933;
-	box-shadow: 0px 0px 5px 2px #669966;
-	margin: 10px;
 	cursor: pointer;
+	display: block;
+}
+
+.walkGallery:hover img {
+	opacity: 0.85;
+	box-shadow: 0px 0px 5px 5px #669966;
 }
 
 .lightsDown {
