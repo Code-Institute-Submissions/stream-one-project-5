@@ -44,7 +44,7 @@ The page detailing upcoming walks shows a brief description of the next schedule
 
 ### Photo Galleries
 
-The galleries page gives a brief recap of the most recent walk, along with a short gallery of photos taken along the route. There is a menu identical to that on the Upcoming Walks page, enabling the user to switch between all the available galleries. By default, the most recent walk will load first.
+The galleries page gives a brief recap of the most recent walk, along with a short gallery of photos taken along the route. There is a menu identical to that on the Upcoming Walks page, enabling the user to switch between all the available galleries. By default, the most recent walk will load first. Thumbnail versions of the full images are used to improve the loading time of the page.
 
 There is a lightbox script which enables photos to be viewed at a larger size. When the script is activated, there are 'previous' and 'next' links to navigate between the pictures in the current gallery and a link to close the viewer. The 'previous' and 'next' links are disabled on the first and last pictures in a gallery respectively.
 
