@@ -4,18 +4,11 @@
 var linesLayer, points, lineFeature, lineString, routeMarkersLayer, routepos, routesize, routeoffset, routeicon;
 var style_blue = {strokeColor: "#0000CD", strokeOpacity: 0.5, strokeWidth: 4.5};
 
-function homeMap() {
-	var options = {resolutions: [2500, 1000, 500, 200, 100, 50, 25, 10, 5, 4, 2.5, 2, 1]};
-	osMap = new OpenSpace.Map('homeMap', options);
-	setglobaloptions();
-	osMap.setCenter(new OpenSpace.MapPoint(254382.5,68750),7);
-}
-
-function nov17Map() {
+function nov17() {
 	
 	//initiate the map
 	var options = {resolutions: [2500, 1000, 500, 200, 100, 50, 25, 10, 5, 4, 2.5, 2, 1]};
-	osMap = new OpenSpace.Map('nov17Map', options);
+	osMap = new OpenSpace.Map('mapElement', options);
 
 	//configure map options (basicmap.js)
 	setglobaloptions();
@@ -98,11 +91,11 @@ function nov17Map() {
 	osMap.addLayer(routeMarkersLayer);
 }
 
-function dec17Map() {
+function dec17() {
 
 //initiate the map
 var options = {resolutions: [2500, 1000, 500, 200, 100, 50, 25, 10, 5, 4, 2.5, 2, 1]};
-osMap = new OpenSpace.Map('dec17Map', options);
+osMap = new OpenSpace.Map('mapElement', options);
 
 //configure map options (basicmap.js)
 setglobaloptions();
@@ -167,11 +160,11 @@ osMap.addLayer(routeMarkersLayer);
 }
 
 
-function jan18Map() {
+function jan18() {
 
 //initiate the map
 var options = {resolutions: [2500, 1000, 500, 200, 100, 50, 25, 10, 5, 4, 2.5, 2, 1]};
-osMap = new OpenSpace.Map('jan18Map', options);
+osMap = new OpenSpace.Map('mapElement', options);
 
 //configure map options (basicmap.js)
 setglobaloptions();
@@ -229,11 +222,11 @@ osMap.addLayer(routeMarkersLayer);
 }
 
 
-function feb18Map() {
+function feb18() {
 
 //initiate the map
 var options = {resolutions: [2500, 1000, 500, 200, 100, 50, 25, 10, 5, 4, 2.5, 2, 1]};
-osMap = new OpenSpace.Map('feb18Map', options);
+osMap = new OpenSpace.Map('mapElement', options);
 
 //configure map options (basicmap.js)
 setglobaloptions();
@@ -292,11 +285,11 @@ routeMarkersLayer.addMarker(new OpenLayers.Marker(routepos, routeicon));
 osMap.addLayer(routeMarkersLayer);
 }
 
-function mar18Map() {
+function mar18() {
 
 //initiate the map
 var options = {resolutions: [2500, 1000, 500, 200, 100, 50, 25, 10, 5, 4, 2.5, 2, 1]};
-osMap = new OpenSpace.Map('mar18Map', options);
+osMap = new OpenSpace.Map('mapElement', options);
 
 //configure map options (basicmap.js)
 setglobaloptions();
@@ -382,11 +375,11 @@ routeMarkersLayer.addMarker(new OpenLayers.Marker(routepos, routeicon));
 osMap.addLayer(routeMarkersLayer);
 }
 
-function apr18Map() {
+function apr18() {
 	
 //initiate the map
 var options = {resolutions: [2500, 1000, 500, 200, 100, 50, 25, 10, 5, 4, 2.5, 2, 1]};
-osMap = new OpenSpace.Map('apr18Map', options);
+osMap = new OpenSpace.Map('mapElement', options);
 
 //configure map options (basicmap.js)
 setglobaloptions();
@@ -447,10 +440,4 @@ routeMarkersLayer.addMarker(new OpenLayers.Marker(routepos, routeicon));
 osMap.addLayer(routeMarkersLayer);
 }
 
-homeMap();
-nov17Map();
-dec17Map();
-jan18Map();
-feb18Map();
-mar18Map();
-apr18Map();
+nov17();
