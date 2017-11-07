@@ -1,6 +1,6 @@
 # Code Institute Stream One Project
  
-This is a project website for Code Institute Full Stack Development course Stream One. It is a sample website for a walking group based in the south-west of England, a small group which organises monthly walks in Devon and Cornwall both on moorland and along the coast path. 
+This is a project website for Code Institute Full Stack Development course Stream One. It is a sample website for a walking group based in the south-west of England, a small group which organises monthly walks in Devon and Cornwall both on moorland and along the coast path. The available version of the site presents a snapshot as it would have looked on 10 November 2017, at the end of the major development process.
 
 The website provides information for both existing and potential group members. The site covers future events and past walks as well as information about the hobby of walking itself. The site also gives links to the group's social media accounts in the footer of each page. Because these accounts do not exist, the links direct to the home page of the relevant site.
 
@@ -40,19 +40,19 @@ The Home Page shows a header image of a past walk above a brief introductory par
 
 ### Upcoming Walks
 
-The page detailing upcoming walks shows a brief description of the next route, along with a map of the route created using Ordnance Survey (OS) Openspace Map Builder and embedded using the OS Openspace API. The next scheduled walk is displayed by default, with links to enable the user to switch between the routes planned for the next six months.
+The page detailing upcoming walks shows a brief description of the next route, along with a map of the route created using Ordnance Survey (OS) Openspace Map Builder and embedded using the OS Openspace API. The next scheduled walk is displayed by default, with a menu to enable the user to switch between the routes planned for the next six months. The menu links feature an image from along the planned route, giving the user a preview of one place which they would visit should they decide to go on that walk.
 
 Enabling this functionality proved tricky to begin with so a separate GitHub branch was utilised until such time as the script was working satisfactorily.
 
 ### Photo Galleries
 
-The galleries page gives a brief recap of the most recent walk, along with a short gallery of photos taken along the route. There is a menu identical to that on the Upcoming Walks page, enabling the user to switch between all the available galleries. By default, the most recent walk will load first. Thumbnail versions of the full images are used to improve the loading time of the page.
+The galleries page gives a brief recap of the most recent walk, along with a short gallery of photos taken along the route. By default, the most recent walk will load first. Thumbnail versions of the full images are used to improve the loading time of the page. There is a menu identical to that on the Upcoming Walks page, enabling the user to switch between all the available galleries. The menu links again feature a background image, this time the first image from the gallery for that month.
 
-There is a lightbox script which enables photos to be viewed at a larger size. When the script is activated, there are 'previous' and 'next' links to navigate between the pictures in the current gallery and a link to close the viewer. The 'previous' and 'next' links are disabled on the first and last pictures in a gallery respectively.
+There is also a lightbox script which enables photos to be viewed at a larger size. When the script is activated, the larger image loads over the page. There are 'previous' and 'next' links to navigate between the pictures in the current gallery and a link to close the viewer. The 'previous' and 'next' links are disabled on the first and last pictures in a gallery respectively.
 
 ### Walking Advice
 
-The Walking Advice page is primarily aimed at people who are new to the hobby. It simply provides a basic introduction to walking, explaining what clothing and equipment might be needed in order to ensure a safe and comfortable day out.
+The Walking Advice page is primarily aimed at people who are new to the hobby. It is the most static page on the website and simply provides a basic introduction to walking. The text explains what clothing and equipment might be needed in order to ensure a safe and comfortable day out walking.
 
 ### Join the Group
 
@@ -70,6 +70,8 @@ The site was deployed to GitHub pages very early in its development. The chief r
 
 ## Testing
 
-The site was tested on a variety of devices and on a number of different browsers. Forms were tested both with and without input in the required fields in order to ensure that the correct validation message would be displayed.
+The site was tested on a variety of devices and on a number of different browsers. The site was developed primarily using Chrome on a Windows 10 PC, while further testing was done on the PC using Firefox and Microsoft Edge. The site was tested on smaller devices, both tablet and mobile phone, both running Android. Testing on these devices included using the Android versions of both Chrome and Firefox.
+
+In the context of the functionality of the site, both the simple contact form on the Home Page and the membership form on the Join the Group page required testing to ensure that the correct validation message would be displayed. Both were tested with and without input in the required fields, ensuring that the failure message would be shown if any one of the required fields was left blank. The membership form was further tested with a variety of inputs in the 'Walking Details' fieldset, to ensure that the correct information message would be displayed if the user selected any of the inputs which had a message attached.
 
 During the testing process, an issue was encountered whereby white space was showing below the month switcher menu on the Photo Galleries page. This was only happening on the mobile stylesheet on Chrome for Android, and only when either there were more than two month links above or the explanatory paragraph appeared below. The testing process did not produce any explanation for this white space and so it is currently assumed to be a bug in the browser.
