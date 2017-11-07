@@ -168,7 +168,6 @@ footer {
 }
 
 #mapHolder {
-	border-top: 2px solid #339933;
 	width: 100%;
 }
 
@@ -355,7 +354,7 @@ fieldset {
 	display: none;
 }
 
-.activeGallery {
+.activeMonth {
 	display: block;
 }
 
@@ -368,7 +367,7 @@ fieldset {
 	height: 60px;
 	line-height: 80px;
 	border-radius: 50%;
-	background-color: #cccccc;
+	background-color: #339933;
 	text-decoration: none;
 	position: relative;
 	cursor: pointer;
@@ -466,6 +465,15 @@ fieldset {
 	bottom: 0;
 	right: 0;
 	margin: auto;
+}
+
+#imageCounter {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	font-weight: bold;
+	font-size: 2em;
+	color: #999999;
 }
 
 #boxCloser {

@@ -11,6 +11,8 @@ function openBox(month, imagePosition) {
 	/* When an image is clicked, display the lightbox element. */
 	document.getElementById("lightbox").classList.remove("hiddenContent");
 
+	document.getElementById("imageCounter").textContent = imagePosition + '/' + activeGallery.length;
+
 	/* Select an image from the gallery and put its HTML in the lightbox element. */
 	chosenImage = imagePosition;
 	activeMonth = month;
@@ -36,6 +38,8 @@ function previousImage() {
 	chosenImage--;
 	document.getElementById("boxImage").innerHTML = '<img src="img/' + activeMonth + '/' + chosenImage +'.jpg" alt="Walk Image" />';
 
+	document.getElementById("imageCounter").textContent = chosenImage + '/' + activeGallery.length;
+
 	/* Hide the 'previous' icon if the new image is the first one. */
 	if (chosenImage === 1) {
 		document.getElementById("previousImage").classList.add("hiddenContent");
@@ -55,6 +59,8 @@ function nextImage() {
 	chosenImage++;
 	document.getElementById("boxImage").innerHTML = '<img src="img/' + activeMonth + '/' + chosenImage +'.jpg" alt="Walk Image" />';
 
+	document.getElementById("imageCounter").textContent = chosenImage + '/' + activeGallery.length;
+	
 	/* Hide the 'next' icon if the new image is the last one. */
 	if (chosenImage === activeGallery.length) {
 		document.getElementById("nextImage").classList.add("hiddenContent");
