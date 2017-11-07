@@ -16,7 +16,7 @@ On the Upcoming Walks and Photo Galleries pages, the flex direction is initially
 
 JavaScript is used on the Home Page to run the image switcher on the header image. A validation script is used for both the quick contact form on the Home Page and the membership form on the Join the Group page. These alert the user if a required field has been left empty, or confirm submission of the form if it has been filled in correctly.
 
-Further use of JavaScript is made on the Photo Galleries page by the inclusion of a content switcher. That script loads up the details of the most recent walk. There are links provided which when clicked, use a JavaScript function to display the details of the chosen walk while hiding all the others.
+Further use of JavaScript is made on the Upcoming Walks and Photo Galleries pages by the inclusion of a content switcher. That script loads up the details of the next or most recent walk. There are links provided which when clicked, use a JavaScript function to display the details of a chosen walk while hiding all the others.
 
 The Photo Galleries page also features a lightbox-style script which allows a user to click a thumbnail image and display it at a larger size in the centre of the viewport. The script includes 'previous' and 'next' links to enable navigation between images and a 'close' link to remove the image viewer.
 
@@ -40,7 +40,9 @@ The Home Page shows a header image of a past walk above a brief introductory par
 
 ### Upcoming Walks
 
-The page detailing upcoming walks shows a brief description of the next schedule walk, along with a map of the route created using Ordnance Survey (OS) Openspace Map Builder and embedded using the OS Openspace API. There are also short description of planned walks up to six months ahead.
+The page detailing upcoming walks shows a brief description of the next route, along with a map of the route created using Ordnance Survey (OS) Openspace Map Builder and embedded using the OS Openspace API. The next scheduled walk is displayed by default, with links to enable the user to switch between the routes planned for the next six months.
+
+Enabling this functionality proved tricky to begin with so a separate GitHub branch was utilised until such time as the script was working satisfactorily.
 
 ### Photo Galleries
 
