@@ -22,9 +22,14 @@ function gallerySwitcher(month) {
 		"may17": 6,
 	};
 
-	/* Loop to add the HTML code for each thumbnail image and generate the gallery for the chosen month. */
+	/* Loop to generate the gallery for the chosen month by creating a div for each thumbnail image in the gallery adding the HTML for the thumbnail, then appending the div to the photoGallery element. */
 	for (var i = 0; i < availableGalleries[chosenMonth]; i++) {
-		document.getElementById("photoGallery").innerHTML += '<div class="' + chosenMonth + ' walkGallery" onclick="openBox(&apos;' + chosenMonth + '&apos;,' + (i + 1) + ')"><img src="img/' + chosenMonth + '/' + (i + 1) + '_th.jpg" alt="Walk Image" /></div>';
+
+		var galleryImage = document.createElement("div");
+		galleryImage.setAttribute("class", chosenMonth + " walkGallery");
+		galleryImage.setAttribute("onclick", "openBox('" + chosenMonth + "'," + (i + 1) + ")");
+		galleryImage.innerHTML = '<img src="img/' + chosenMonth + '/' + (i + 1) + '_th.jpg" alt="Walk Image" /></div>';
+		document.getElementById("photoGallery").appendChild(galleryImage);
 	}
 
 }
