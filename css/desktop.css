@@ -15,7 +15,7 @@ html {
 #mainHeader a {
 	display: inline;
 	border: none;
-	padding: 0 5px 0 5px;
+	padding: 10px 5px 10px 5px;
 }
 
 #mainHeader a:last-child{
@@ -27,7 +27,6 @@ html {
 	color: #339933;
 	background-color: white;
 	padding: 10px 5px 10px 5px;
-	transition: 0.2s;
 }
 
 #menuBar {
