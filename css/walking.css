@@ -277,16 +277,16 @@ fieldset {
 	box-sizing: border-box;
 }
 
-.sliderImage {
+.faderImage {
 	width: 100%;
 }
 
 .fadeIn {
-	animation-name: imageFader;
+	animation-name: fadeTransition;
 	animation-duration: 2s;
 }
 
-@keyframes imageFader {
+@keyframes fadeTransition {
 	from {
 		opacity: 0.5;
 	}

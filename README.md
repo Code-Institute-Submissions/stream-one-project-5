@@ -14,13 +14,15 @@ On the Upcoming Walks and Photo Galleries pages, the flex direction is initially
 
 ## JavaScript Functionality
 
-JavaScript is used on the Home Page to run the image switcher on the header image. A validation script is used for both the quick contact form on the Home Page and the membership form on the Join the Group page. These alert the user if a required field has been left empty, or confirm submission of the form if it has been filled in correctly.
+JavaScript is used on the Home Page to run the image fader on the header image. A validation script is used for both the quick contact form on the Home Page and the membership form on the Join the Group page. These provide the user with a message when they attempt to submit the form, either a warning message if a required field has been left empty or a success message if the form submission is valid.
 
 Further use of JavaScript is made on the Upcoming Walks and Photo Galleries pages by the inclusion of a content switcher. That script loads by default the details of the next or most recent walk. There are links provided which when clicked, use a JavaScript function to display the details of a chosen walk while hiding all the others.
 
 The Photo Galleries page also features a lightbox-style script which allows a user to click a thumbnail image and display it at a larger size in the centre of the viewport. The script includes a function to allow the user to move to either the previous or next image in the current gallery and a 'close' function to remove the image viewer.
 
 External scripts are used in the context of the OS Openspace API on both the Home Page and the Upcoming Walks page. One of these is accessed remotely from the OS Openspace website, the other is generated using OS Openspace Map Builder. The generated code has been edited to improve functionality, primarily because a number of different maps are being utilised on a single page, and the resultant code is stored with the site's other JavaScript files.
+
+In consideration of users who may not have JavaScript enabled, some steps have been taken to ensure usability without JavaScript. Forms have a message requesting the user to enable JavaScript before attempting to submit. On the Upcoming Walks and Photo Galleries page details of the first available month are shown, while there is a message explaining that the other months are only available with JavaScript enabled.
 
 ## File Structure
 
@@ -75,5 +77,7 @@ The site was tested on a variety of devices and on a number of different browser
 In the context of the functionality of the site, both the simple contact form on the Home Page and the membership form on the Join the Group page required testing to ensure that the correct validation message would be displayed. Both were tested with and without input in the required fields, ensuring that the failure message would be shown if any one of the required fields was left blank. The membership form was further tested with a variety of inputs in the 'Walking Details' fieldset, to ensure that the correct information message would be displayed if the user selected any of the inputs which had a message attached.
 
 The lightbox script on the Photo Galleries page was extensively tested by selecting each image in turn on a gallery and navigating through the images from it. This was done to ensure that the image changing function was working correctly, especially in terms of hiding the previous and next links on the first and last images in the gallery.
+
+All pages on the site were tested with JavaScript disabled. This was done to ensure that there was still an adequate degree of usability without scripts running, and also that the information messages regarding the lack of JavaScript were clear and understandable.
 
 During the testing process, an issue was encountered whereby white space was showing below the month switcher menu on the Photo Galleries page. This was only happening on the mobile stylesheet on Chrome for Android, and only when either there were more than two month links above or the explanatory paragraph appeared below. The testing process did not produce any explanation for this white space and so it is currently assumed to be a bug in the browser.
