@@ -19,9 +19,6 @@ function contentSwitcher(month) {
 		document.getElementById(month).classList.add("activeMonth");
 	}
 
-	/* On the Upcoming Walks page, empty the 'mapElement' div in readiness for a new map. */
-	document.getElementById("mapElement").innerHTML = "";
-
 }
 
 /* Run function when page loads in order to display default gallery. */

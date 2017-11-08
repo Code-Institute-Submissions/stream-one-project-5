@@ -16,9 +16,9 @@ On the Upcoming Walks and Photo Galleries pages, the flex direction is initially
 
 JavaScript is used on the Home Page to run the image switcher on the header image. A validation script is used for both the quick contact form on the Home Page and the membership form on the Join the Group page. These alert the user if a required field has been left empty, or confirm submission of the form if it has been filled in correctly.
 
-Further use of JavaScript is made on the Upcoming Walks and Photo Galleries pages by the inclusion of a content switcher. That script loads up the details of the next or most recent walk. There are links provided which when clicked, use a JavaScript function to display the details of a chosen walk while hiding all the others.
+Further use of JavaScript is made on the Upcoming Walks and Photo Galleries pages by the inclusion of a content switcher. That script loads by default the details of the next or most recent walk. There are links provided which when clicked, use a JavaScript function to display the details of a chosen walk while hiding all the others.
 
-The Photo Galleries page also features a lightbox-style script which allows a user to click a thumbnail image and display it at a larger size in the centre of the viewport. The script includes 'previous' and 'next' links to enable navigation between images and a 'close' link to remove the image viewer.
+The Photo Galleries page also features a lightbox-style script which allows a user to click a thumbnail image and display it at a larger size in the centre of the viewport. The script includes a function to allow the user to move to either the previous or next image in the current gallery and a 'close' function to remove the image viewer.
 
 External scripts are used in the context of the OS Openspace API on both the Home Page and the Upcoming Walks page. One of these is accessed remotely from the OS Openspace website, the other is generated using OS Openspace Map Builder and is stored with the site's other JavaScript files.
 

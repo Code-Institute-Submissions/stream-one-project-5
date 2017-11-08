@@ -11,6 +11,7 @@ function openBox(month, imagePosition) {
 	/* When an image is clicked, display the lightbox element. */
 	document.getElementById("lightbox").classList.remove("hiddenContent");
 
+	/* Display the position of the current image within the active gallery, e.g. '1/6'. */
 	document.getElementById("imageCounter").textContent = imagePosition + '/' + activeGallery.length;
 
 	/* Select an image from the gallery and put its HTML in the lightbox element. */
@@ -26,43 +27,33 @@ function openBox(month, imagePosition) {
 	}
 }
 
-/* After an image is selected, the user can move back to the previous image. */
-function previousImage() {
+/* After an image is selected, the user can move to either the previous or next image. */
+function changeImage(direction) {
 
-	/* Display the 'next' icon if moving away from the last image. */
-	if (chosenImage === activeGallery.length) {
+	/* Ensure both the 'previous' and 'next' icons are displayed in case the old image was either the first or last in the gallery. */
+	if (chosenImage === 1) {
+		document.getElementById("previousImage").classList.remove("hiddenContent");
+	} else if (chosenImage === activeGallery.length) {
 		document.getElementById("nextImage").classList.remove("hiddenContent");
 	}
 
-	/* Choose the previous image and put its HTML in the lightbox element. */
-	chosenImage--;
-	document.getElementById("boxImage").innerHTML = '<img src="img/' + activeMonth + '/' + chosenImage +'.jpg" alt="Walk Image" />';
-
-	document.getElementById("imageCounter").textContent = chosenImage + '/' + activeGallery.length;
-
-	/* Hide the 'previous' icon if the new image is the first one. */
-	if (chosenImage === 1) {
-		document.getElementById("previousImage").classList.add("hiddenContent");
-	} 
-
-}
-
-/* After an image is selected, the user can move on to the next image. */
-function nextImage() { 
-
-	/* Display the 'previous' icon if moving away from the first image. */
-	if (chosenImage === 1) {
-		document.getElementById("previousImage").classList.remove("hiddenContent");
+	/* If the user selects the previous image, decrease 'chosenImage' by 1. Likewise if the user selects the next image, increase 'chosenImage' by 1. */
+	if (direction === 'prev') {
+		chosenImage--;
+	} else if (direction === 'next') {
+		chosenImage++;
 	}
 
-	/* Choose the next image and put its HTML in the lightbox element. */
-	chosenImage++;
+	/* Put the HTML of the new image in the lightbox element. */
 	document.getElementById("boxImage").innerHTML = '<img src="img/' + activeMonth + '/' + chosenImage +'.jpg" alt="Walk Image" />';
 
+	/* Display the position of the new image within the active gallery. */
 	document.getElementById("imageCounter").textContent = chosenImage + '/' + activeGallery.length;
-	
-	/* Hide the 'next' icon if the new image is the last one. */
-	if (chosenImage === activeGallery.length) {
+
+	/* Hide the 'previous' icon if the new image is the first one or the 'next' icon if the new image is the last one. */
+	if (chosenImage === 1) {
+		document.getElementById("previousImage").classList.add("hiddenContent");
+	} else if (chosenImage === activeGallery.length) {
 		document.getElementById("nextImage").classList.add("hiddenContent");
 	} 
 
