@@ -6,7 +6,7 @@ The website provides information for both existing and potential group members. 
 
 ## Responsive Design
 
-There is one breakpoint set which is activated when the page width exceeds 800px. This switches from a horizontal menu to a vertical menu and also changes the header and footer text from left to centre aligned.
+There is one breakpoint set which is activated when the page width exceeds 800px. This switches from a horizontal menu to a vertical menu and also changes the header and footer text from left to centre aligned. In order to prevent the site being stretched too wide, a maximum width of 1200px is set on the body. A media query is used to add left and right borders to the body should the width of the viewport exceed 1200px.
 
 On the Home Page, Flexbox is used to arrange the information boxes and a minimum width of 250 pixels is set to ensure that the boxes do not become too narrow. Should the page width be such that the boxes would drop below 250 pixels, the furthest box to the right will drop below the others. Flexbox is also used in the membership form to show the two fieldsets alongside each other in the desktop display.
 

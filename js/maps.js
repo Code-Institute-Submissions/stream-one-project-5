@@ -2,12 +2,6 @@
 
 function loadMap(month) {
 
-	/* Load the div which displays the map into the mapDisplay element. */
-	var mapLoader = document.createElement("div");
-	mapLoader.setAttribute("id", "routeMap");
-	mapLoader.setAttribute("class", "futureMap");
-	document.getElementById("mapDisplay").appendChild(mapLoader);
-
 	/* Set the chosen month to be the first available on page load, otherwise set it to the month selected from the menu. */
 	var chosenMonth;
 	var walkList = document.getElementsByClassName("walkSwitcher");
