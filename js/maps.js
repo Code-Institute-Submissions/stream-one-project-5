@@ -2,6 +2,12 @@
 
 function loadMap(month) {
 
+	/* Load the div which displays the map into the mapDisplay element. */
+	var mapLoader = document.createElement("div");
+	mapLoader.setAttribute("id", "routeMap");
+	mapLoader.setAttribute("class", "futureMap");
+	document.getElementById("mapDisplay").appendChild(mapLoader);
+
 	/* Set the chosen month to be the first available on page load, otherwise set it to the month selected from the menu. */
 	var chosenMonth;
 	var walkList = document.getElementsByClassName("walkSwitcher");
@@ -351,6 +357,7 @@ function loadMap(month) {
 	var routeicon = new OpenSpace.Icon('https://openspace.ordnancesurvey.co.uk/osmapapi/img_versions/img_1.1/mapbuilder/routemarker-startend.png', routesize, routeoffset, null, null);
 	routeMarkersLayer.addMarker(new OpenLayers.Marker(routepos, routeicon));
 	osMap.addLayer(routeMarkersLayer);
+
 }
 
 loadMap();

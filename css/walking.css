@@ -47,6 +47,13 @@ h3 {
 	text-align: left;
 }
 
+#noScript {
+	font-weight: normal;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 #mainHeader {
 	background-color: #339933;
 	width: 100%;

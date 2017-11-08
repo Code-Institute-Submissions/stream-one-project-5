@@ -8,6 +8,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/walking.css" />
 	<link rel="stylesheet" media="screen and (min-width: 801px)" href="css/desktop.css" />
+	
+	<!-- Start of OS Openspace Maps Code -->
+	<script type="text/javascript" src="https://openspace.ordnancesurvey.co.uk/osmapapi/openspace.js?key=5B2D6FA0BB4455B0E0530C6CA40A6A8D"></script>
+	<script type= "text/javascript" src="https://openspace.ordnancesurvey.co.uk/osmapapi/script/mapbuilder/basicmap.js"></script>
+	<!-- End of OS Openspace Maps Code -->
 </head>
 
 <body>
@@ -25,6 +30,10 @@
 
 	<section id="pageContent">
 		<h2>Upcoming Walks</h2>
+
+		<noscript>
+			<h3 id="noScript">Only the details of the next walk are available as JavaScript is not currently running in your browser. Route maps and details of later walks can only be viewed with JavaScript enabled.</h3>
+		</noscript>
 
 		<section id="walkDetails">
 
@@ -59,7 +68,7 @@
 
 			<section class="walkSection">
 
-				<section id="nov17" class="walkSwitcher">
+				<section id="nov17" class="walkSwitcher activeMonth">
 					<h3>Saturday 11 November 2017</h3>
 					<p>Meet at 10.00 am in the car park at the top of the hill just east of Dousland. We will walk up the route of the old Yelverton to Princetown railway, crossing the new Peekhill Bridge. We will stay on the old railway line until shortly after Ingra Tor, before turning east and then south-east past some hut circles to cross the main B3212 road. We will soon reach Black Tor and its impressive Logan Stone.</p>
 					<p>Dropping downhill towards the River Meavy, we will pick up the Devonport Leat at the point where an aqueduct carries it across the river. We will then follow the leat through the woods above Burrator Reservoir. Picking up the road for a short stretch below Leather Tor, we branch away briefly through the woods again and end with a short uphill climb via the road back to the car park. The route is relatively easy, although there is one steep downhill section.</p>
@@ -96,7 +105,6 @@
 				</section>
 
 				<section id="mapDisplay">
-					<div id="routeMap" class="futureMap"></div>
 				</section>
 				
 			</section>
@@ -115,11 +123,6 @@
 		</section>
 		<span id="footerText">&copy; 2017 South West Walking</span>
 	</footer>
-
-	<!-- Start of OS Openspace Maps Code -->
-	<script type="text/javascript" src="https://openspace.ordnancesurvey.co.uk/osmapapi/openspace.js?key=5B2D6FA0BB4455B0E0530C6CA40A6A8D"></script>
-	<script type= "text/javascript" src="https://openspace.ordnancesurvey.co.uk/osmapapi/script/mapbuilder/basicmap.js"></script>
-	<!-- End of OS Openspace Maps Code -->
 	
 	<script src="js/switcher.js"></script>
 	<script src="js/maps.js"></script>
