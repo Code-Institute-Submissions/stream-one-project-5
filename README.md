@@ -1,8 +1,22 @@
 # Code Institute Stream One Project
  
-This is a project website for Code Institute Full Stack Development course Stream One. It is a sample website for a walking group based in the south-west of England, a small group which organises monthly walks in Devon and Cornwall both on moorland and along the coast path. The available version of the site presents a snapshot as it would have looked on 10 November 2017, at the end of the major development process.
+This is a project website for Code Institute Full Stack Development course Stream One. It is a sample website for a walking group based in the south-west of England, a small group which organises monthly walks in Devon and Cornwall both on moorland and along the coast path. The available version of the site presents a snapshot as it would have looked on 10 November 2017, the date which marked the end of the major development process.
 
 The website provides information for both existing and potential group members. The site covers future events and past walks as well as information about the hobby of walking itself. The site also gives links to the group's social media accounts in the footer of each page. Because these accounts do not exist, the links direct to the home page of the relevant site.
+
+## Contents
+1. [Responsive Design](#responsive-design)
+2. [JavaScript Functionality](#javascript-functionality)
+    * [External JavaScript Code](#external-javascript-code)
+3. [File Structure](#file-structure)
+4. [Site Content](#site-content)
+    * [Home Page](#home-page)
+    * [Upcoming Walks](#upcoming-walks)
+    * [Photo Galleries](#photo-galleries)
+    * [Walking Advice](#walking-advice)
+    * [Join the Group](#join-the-group)
+5. [Deployment](#deployment)
+6. [Testing](#testing)
 
 ## Responsive Design
 
@@ -18,17 +32,25 @@ The CSS for the default site layout (viewport maximum 800 pixels wide) is contai
 
 JavaScript is used on the Home Page to run the image fader on the header image. A validation script is used for both the quick contact form on the Home Page and the membership form on the Join the Group page. These provide the user with a message when they attempt to submit the form, either a warning message if a required field has been left empty or a success message if the form submission is valid.
 
-Further use of JavaScript is made on the Upcoming Walks and Photo Galleries pages by the inclusion of a content switcher. That script loads by default the details of the next or most recent walk. There are links provided which when clicked, use a JavaScript function to display the details of a chosen walk while hiding all the others. Further JavaScript functions are then used to display a route map (Upcoming Walks page) or a selection of photos (Photo Galleries page).
+Further use of JavaScript is made on the Upcoming Walks and Photo Galleries pages by the inclusion of a content switcher. That script loads by default the details of the next or most recent walk. There are links provided which when clicked, call a JavaScript function which displays the details of the chosen walk while hiding all the others. The function is also used to call one of two other functions, displaying either a route map (Upcoming Walks page, see section on External JavaScript Code) or a selection of photos (Photo Galleries page).
 
 The Photo Galleries page also features a lightbox-style script which allows a user to click a thumbnail image and display it at a larger size in the centre of the viewport. The script includes a function to allow the user to move to either the previous or next image in the current gallery and a 'close' function to remove the image viewer.
 
-External scripts are used in the context of the OS Openspace API on both the Home Page and the Upcoming Walks page. One of these is accessed remotely from the OS Openspace website, the other is generated using OS Openspace Map Builder. The generated code has been edited to improve functionality, primarily because a number of different maps are being utilised on a single page, and the resultant code is stored with the site's other JavaScript files. Because the inclusion of route lines on maps requires a considerable number of grid references to be stored in JavaScript objects, the data for the maps is stored in a separate file from the function which generates the maps.
-
 In consideration of users who may not have JavaScript enabled, some steps have been taken to ensure usability without JavaScript. Forms have a message requesting the user to enable JavaScript before attempting to submit. On the Upcoming Walks and Photo Galleries page details of the first available month are shown, while there is a message explaining that the other months are only available with JavaScript enabled.
+
+### External JavaScript Code
+
+External scripts are used in the context of the OS Openspace API on both the Home Page and the Upcoming Walks page. Using these maps in the website requires the inclusion of one external JavaScript file, hosted by OS Openspace, which generates the maps and also code generated using [OS Openspace Map Builder](https://www.ordnancesurvey.co.uk/business-and-government/help-and-support/web-services/os-openspace/web-map-builder.html).
+
+The Openspace Map Builder generates JavaScript code which sets the centre point of the map and if required displays the planned route as a line on the map. Once generated, this code needs to be stored on the website server in a separate JavaScript file. The generated code has been edited to improve functionality, primarily because a number of different maps are being utilised on a single page, and the resultant code is stored with the site's other JavaScript files.
+
+For the maps on the Upcoming Walks page, part of the generated code was rewritten to enable six different maps to be created from within a single JavaScript function. The grid references for the centre point, starting position and route on each map were placed inside an object and the data for the chosen map inserted into the script when the function was called.
+
+Further to that, a loop was introduced to push the grid references for the route line into an array, rather than inserting each one separately as the generated code did. Because the inclusion of route lines on maps requires a considerable number of grid references to be stored in JavaScript objects, the data for the maps is stored in a separate file from the function which generates the maps.
 
 ## File Structure
 
-All image files, CSS files and JavaScript files are separated into different directories for clarity and simplicity. Images are further separated depending upon where in the site they are used, with the thumbnail images for each indivdual gallery placed in the same directory as their full sized equivalent.
+All image files, CSS files and JavaScript files are separated into different directories for clarity and simplicity. Images are further separated depending upon where in the site they are used, with the thumbnail images for each indivdual gallery placed in the same directory as their full sized equivalent. The only files within the default directory are the HTML files for the pages of the site and this README.md file.
 
 ## Site Content
 
@@ -64,12 +86,6 @@ There is a specific page on the site for people who wish to join the group, whic
 
 As with the contact form on the Home Page, the form does not submit as the scope of this project is front end only. It gives the same validation message when the button is clicked, either giving a warning if a required field has been left empty or confirming successful submission of the form. Additionally, some further messages are set which will be shown if a particular option has been chosen in the form. This allows group organisers to provide information which may be of interest to the person who is joining. Only the first applicable message will be shown in order to prevent the alert from being excessively large.
 
-## External Code
-
-Use of external code was made through the OS Openspace maps. Using these maps in the website requires the inclusion of one external JavaScript file, hosted by OS Openspace, which generates the maps. Additionally, the Openspace Map Builder generates JavaScript code which sets the centre point of the map and if required displays the planned route as a line on the map. Once generated, this code needs to be stored on the website server in a separate JavaScript file.
-
-For the maps on the Upcoming Walks page, part of the generated code was rewritten to enable six different maps to be created from within a single JavaScript function. The grid references for the centre point, starting position and route on each map were placed inside an object and the data for the chosen map inserted into the script when the function was called. Further to that, a loop was introduced to push the grid references for the route line into an array, rather than inserting each one separately as the generated code did.
-
 ## Deployment
 
 The site was deployed to GitHub pages using a 'gh-pages' branch in the respository. This deployment was done very early in the development process. The chief reason for this was to enable easy testing on a range of other devices, specifically tablet and mobile, as development was being done on a PC. Once a new piece of functionality had been added and tested on a variety of browsers, a new commit was made to GitHub ensuring that the 'gh-pages' branch was up to date at all times.
@@ -80,7 +96,9 @@ The site was tested on a variety of devices and on a number of different browser
 
 Testing on mobile devices included using the Android versions of both Chrome and Firefox. In testing the site on very narrow devices, it was noted that the minumum width on the Home Page information boxes began to cause a problem when the width of the viewport dropped below 310 pixels. Should a user visit the site on a device narrower than this, some horizontal scrolling may be needed to see the entirety of the information boxes.
 
-In the context of the functionality of the site, both the simple contact form on the Home Page and the membership form on the Join the Group page required testing to ensure that the correct validation message would be displayed. Both were tested with and without input in the required fields, ensuring that the failure message would be shown if any one of the required fields was left blank. The membership form was further tested with a variety of inputs in the 'Walking Details' fieldset, to ensure that the correct information message would be displayed if the user selected any of the inputs which had a message attached.
+In the context of the functionality of the site, both the simple contact form on the Home Page and the membership form on the Join the Group page required testing to ensure that the correct validation message would be displayed. Both were tested with and without input in the required fields. This was done to ensure that the failure message would be shown if any one of the required fields was left blank, while the success message would be shown if all required fields had input. The membership form was further tested with a variety of inputs in the 'Walking Details' fieldset, to ensure that the first applicable information message would be displayed if the user selected any of the inputs which had a message attached.
+
+Both the Upcoming Walks and Photo Galleries pages were tested to ensure that the correct section of content was displayed by default on page load. This was either the next scheduled walk (Upcoming Walks page) or the most recent past walk (Photo Galleries page). The switcher menus on both pages were tested by navigating between the different sections of content, ensuring that the correct text was displayed on the screen each time and that the correct map or photo gallery was loaded.
 
 The lightbox script on the Photo Galleries page was extensively tested by selecting each image in turn on a gallery and navigating through the images from it. This was done to ensure that the image changing function was working correctly, especially in terms of hiding the previous and next links on the first and last images in the gallery.
 
