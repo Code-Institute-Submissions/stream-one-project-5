@@ -2,10 +2,6 @@
 
 function homeMap() {
 
-	/* Variables to create route line. */
-	var linesLayer, points, lineFeature, lineString, routeMarkersLayer, routepos, routesize, routeoffset, routeicon;
-	var style_blue = {strokeColor: "#0000CD", strokeOpacity: 0.5, strokeWidth: 4.5};
-	
 	/* Variables to set centre of map and zoom level. */
 	var options = {resolutions: [2500, 1000, 500, 200, 100, 50, 25, 10, 5, 4, 2.5, 2, 1]};
 	osMap = new OpenSpace.Map('homeMap', options);

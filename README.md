@@ -2,21 +2,30 @@
  
 This is a project website for Code Institute Full Stack Development course Stream One. It is a sample website for a walking group based in the south-west of England, a small group which organises monthly walks in Devon and Cornwall both on moorland and along the coast path. The available version of the site presents a snapshot as it would have looked on 10 November 2017, the date which marked the end of the major development process.
 
-The website provides information for both existing and potential group members. The site covers future events and past walks as well as information about the hobby of walking itself. The site also gives links to the group's social media accounts in the footer of each page. Because these accounts do not exist, the links direct to the home page of the relevant site.
-
 ## Contents
-1. [Responsive Design](#responsive-design)
-2. [JavaScript Functionality](#javascript-functionality)
+1. [Preparation](#preparation)
+2. [Responsive Design](#responsive-design)
+3. [JavaScript Functionality](#javascript-functionality)
     * [External JavaScript Code](#external-javascript-code)
-3. [File Structure](#file-structure)
-4. [Site Content](#site-content)
+4. [File Structure](#file-structure)
+5. [Site Content](#site-content)
     * [Home Page](#home-page)
     * [Upcoming Walks](#upcoming-walks)
     * [Photo Galleries](#photo-galleries)
     * [Walking Advice](#walking-advice)
     * [Join the Group](#join-the-group)
-5. [Deployment](#deployment)
-6. [Testing](#testing)
+6. [Deployment](#deployment)
+7. [Testing](#testing)
+
+## Preparation
+
+Before the design process got underway, a number of user stories were devised in order to consider suitable content for the site. It was determined that visitors to the site would be a mixture of existing group members and potential members, with the potential members being further divided into those who were already experienced walkers and those who were new to the hobby.
+
+With these users in mind, it was important to include information for existing members in terms of detailing upcoming events and giving the ability to look back at photos from past walks. Such information may also be of interest to non-members, but there was additional information required for those users. Those who were unfamiliar with the hobby may have been looking for advice on what they may need to purchase ahead of joining the group, so an advice page was an important element.
+
+The ability to contact the group was essential. Some users who were only considering joining the group may have just had a general enquiry for the group organisers, while those who had decided to become members would require a separate means of contact whereby they could join the group. It was also important to tailor the information requested from a potential new member to be helpful to group organisers.
+
+Once the required content had been determined, wireframes were created using the software 'Pencil'. These consisted of two mock-ups for each intended page, one for narrower devices such as mobile phones and tablets and another for wider devices such as laptops and desktop computers.
 
 ## Responsive Design
 
@@ -63,6 +72,8 @@ The Home Page shows a header image of a past walk above a brief introductory par
 * The second information box gives information about the most recent walk and a preview photo, with a link to the Photo Galleries page where more pictures are available.
 
 * The final information box includes a simple contact form, for people who may not wish to join the group but who have an enquiry to send to the group organisers. The form just gives fields for basic contact information and a textbox for the message. As the scope of this project is front end only, the form does not submit but displays a validation message when the 'Send Message' button is clicked. This message either gives a warning if a required field has been left empty or confirms successful submission of the form.
+
+At the bottom of the page, as on all other pages, there are links to the group's social media accounts in the footer. Because these accounts do not exist, the links simply direct to the home page of the relevant site.
 
 ### Upcoming Walks
 

@@ -1,3 +1,7 @@
+/* All default style contained in this file. */
+
+/* General element styling. */
+
 html {
 	background-color: #cccccc;
 }
@@ -35,12 +39,24 @@ h3 {
 	text-align: left;
 }
 
+.hiddenContent {
+	display: none;
+}
+
+.blockContent {
+	display: block;
+}
+
+/* Content to be displayed if JavaScript is not available. */
+
 #noScript {
 	font-weight: normal;
 	text-align: center;
 	margin-left: 10px;
 	margin-right: 10px;
 }
+
+/* Styles for main page header and navigation. */
 
 #mainHeader {
 	background-color: #339933;
@@ -67,6 +83,8 @@ h3 {
 	background-color: white;
 }
 
+/* Styles for page footer. */
+
 footer {
 	background-color: #339933;
 	width: 100%;
@@ -75,6 +93,79 @@ footer {
 	box-shadow: 0px -2px 5px 2px #669966;
 	padding: 5px 0 5px 0;
 }
+
+/* Styles for social media links in page footer. */
+
+.social {
+	display: inline-block;
+	margin: 0px 10px 0px 10px;
+}
+
+.facebook {
+	height: 40px;
+	width: 40px;
+	background-image: url(../img/social/grey/Facebook.png);
+	background-size: contain;
+}
+
+.facebook:hover {
+	background-image: url(../img/social/colour/Facebook.png);
+}
+
+.twitter {
+	height: 40px;
+	width: 40px;
+	background-image: url(../img/social/grey/Twitter.png);
+	background-size: contain;
+}
+
+.twitter:hover {
+	background-image: url(../img/social/colour/Twitter.png);
+}
+
+.instagram {
+	height: 40px;
+	width: 40px;
+	background-image: url(../img/social/grey/Instagram.png);
+	background-size: contain;
+}
+
+.instagram:hover {
+	background-image: url(../img/social/colour/Instagram.png);
+}
+
+.youtube {
+	height: 40px;
+	width: 40px;
+	background-image: url(../img/social/grey/YouTube.png);
+	background-size: contain;
+}
+
+.youtube:hover {
+	background-image: url(../img/social/colour/YouTube.png);
+}
+
+/* Styles for displaying image fader on Home Page. */
+
+.faderImage {
+	width: 100%;
+}
+
+.fadeIn {
+	animation-name: fadeTransition;
+	animation-duration: 2s;
+}
+
+@keyframes fadeTransition {
+	from {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Styles for Home Page introduction. */
 
 #homeIntro {
 	background-color: white;
@@ -89,6 +180,8 @@ footer {
 	margin: 0;
 	padding: 0;
 }
+
+/* Styles for Home Page information boxes. */
 
 #homeContent {
 	display: flex;
@@ -130,6 +223,16 @@ footer {
 	text-align: center;
 }
 
+#infoPic {
+	margin-bottom: 10px;
+	border: 2px solid #339933;
+	display: block;
+	width: 240px;
+	height: 180px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .infoBox h2 {
 	color: white;
 	background-color: #339933;
@@ -157,6 +260,8 @@ footer {
 	text-decoration: underline;
 }
 
+/* Styles for displaying OS Openspace maps. */
+
 #homeMap {
 	width: 100%;
 	height: 190px;
@@ -174,45 +279,16 @@ footer {
 	box-sizing: border-box;
 }
 
-#infoPic {
-	margin-bottom: 10px;
-	border: 2px solid #339933;
-	display: block;
-	width: 240px;
-	height: 180px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.quickForm p {
-	margin-top: 20px;
-}
-
-.quickForm {
-	position: relative;
-}
-
-#quickForm {
-	margin: 10px 20px 10px 20px;
-	box-sizing: border-box;
-}
+/* Styles for displaying contact forms. */
 
 .formElement {
 	margin-top: 5px;
 }
 
-.quickFormInput {
+.formInput {
 	margin: 0 auto 0 auto;
 	width: 100%;
 	box-sizing: border-box;
-}
-
-.hiddenContent {
-	display: none;
-}
-
-.blockContent {
-	display: block;
 }
 
 #formWrapper {
@@ -223,6 +299,28 @@ footer {
 #formWrapper p {
 	margin: 10px 20px 0 20px;
 	position: relative;
+}
+
+#quickForm {
+	margin: 10px 20px 10px 20px;
+	box-sizing: border-box;
+}
+
+.quickFormBox {
+	border-top: 2px solid #339933;
+	position: relative;
+}
+
+.quickFormBox p {
+	margin-top: 20px;
+}
+
+fieldset {
+	margin: 0 auto 10px auto;
+	max-width: 500px;
+	box-sizing: border-box;
+	text-align: left;
+	border: ridge #339933;
 }
 
 #formValidation {
@@ -240,18 +338,6 @@ footer {
 	text-align: center;
 }
 
-.quickForm {
-	border-top: 2px solid #339933;
-}
-
-fieldset {
-	margin: 0 auto 10px auto;
-	max-width: 500px;
-	box-sizing: border-box;
-	text-align: left;
-	border: ridge #339933;
-}
-
 #validationButton {
 	display: block;
 	text-align: center;
@@ -259,29 +345,12 @@ fieldset {
 	overflow: visible;
 }
 
-.membershipFormInput {
-	margin: 0 auto 0 auto;
+.submitButton {
 	width: 100%;
-	box-sizing: border-box;
+	max-width: 500px;
 }
 
-.faderImage {
-	width: 100%;
-}
-
-.fadeIn {
-	animation-name: fadeTransition;
-	animation-duration: 2s;
-}
-
-@keyframes fadeTransition {
-	from {
-		opacity: 0.5;
-	}
-	to {
-		opacity: 1;
-	}
-}
+/* Styles for main content of pages. */
 
 #pageContent {
 	background-color: white;
@@ -293,38 +362,7 @@ fieldset {
 	font-size: 1.5em;
 }
 
-.adviceSection {
-	overflow: hidden;
-	margin-bottom: 10px;
-}
-
-.adviceSection p {
-	margin-top: 0;
-}
-
-.adviceSection h3 {
-	margin: 0;
-	padding: 0;
-}
-
-.adviceImage {
-	width: 160px;
-	height: 120px;
-	float: left;
-	margin: 0 20px 10px 0;
-	clear: both;
-	border: 2px solid #339933;
-	box-shadow: 2px 2px 5px 2px #669966;
-}
-
-.submitButton {
-	width: 100%;
-	max-width: 500px;
-}
-
-#walkMenu {
-	margin: 10px;
-}
+/* Styles for displaying switchable content on Upcoming Walks and Photo Galleries pages. */
 
 #walkDetails {
 	display: flex;
@@ -356,6 +394,8 @@ fieldset {
 .menuRow {
 	display: inline-block;
 }
+
+/* Styles for content switcher menu items. */
 
 .switchLink {
 	margin: 10px;
@@ -414,6 +454,8 @@ fieldset {
 	transition: 0.5s;
 }
 
+/* Styles for photo galleries. */
+
 .walkGallery {
 	display: inline-block;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -434,6 +476,8 @@ fieldset {
 	opacity: 0.85;
 	box-shadow: 0px 0px 5px 5px #669966;
 }
+
+/* Styles for displaying lightbox images. */
 
 .lightsDown {
 	width: 100%;
@@ -516,51 +560,28 @@ fieldset {
 	padding: 0;
 }
 
-.social {
-	display: inline-block;
-	margin: 0px 10px 0px 10px;
+/* Styles for individual sections of Walking Advice page. */
+
+.adviceSection {
+	overflow: hidden;
+	margin-bottom: 10px;
 }
 
-.facebook {
-	height: 40px;
-	width: 40px;
-	background-image: url(../img/social/grey/Facebook.png);
-	background-size: contain;
+.adviceSection p {
+	margin-top: 0;
 }
 
-.facebook:hover {
-	background-image: url(../img/social/colour/Facebook.png);
+.adviceSection h3 {
+	margin: 0;
+	padding: 0;
 }
 
-.twitter {
-	height: 40px;
-	width: 40px;
-	background-image: url(../img/social/grey/Twitter.png);
-	background-size: contain;
-}
-
-.twitter:hover {
-	background-image: url(../img/social/colour/Twitter.png);
-}
-
-.instagram {
-	height: 40px;
-	width: 40px;
-	background-image: url(../img/social/grey/Instagram.png);
-	background-size: contain;
-}
-
-.instagram:hover {
-	background-image: url(../img/social/colour/Instagram.png);
-}
-
-.youtube {
-	height: 40px;
-	width: 40px;
-	background-image: url(../img/social/grey/YouTube.png);
-	background-size: contain;
-}
-
-.youtube:hover {
-	background-image: url(../img/social/colour/YouTube.png);
+.adviceImage {
+	width: 160px;
+	height: 120px;
+	float: left;
+	margin: 0 20px 10px 0;
+	clear: both;
+	border: 2px solid #339933;
+	box-shadow: 2px 2px 5px 2px #669966;
 }

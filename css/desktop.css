@@ -1,6 +1,4 @@
-/*
-Styles in this file relate to viewports wider than 800 pixels.
-*/
+/* Styles in this file relate to viewports wider than 800 pixels, with styling for larger widths defined in media queries. */
 
 html {
 	background-color: #f9fff9;
@@ -52,6 +50,11 @@ footer {
 	font-size: 1.2em;
 }
 
+#social {
+	float: right;
+	margin-right: 10px;
+}
+
 #membershipBoxes {
 	display: flex;
 	flex-flow: row wrap;
@@ -98,11 +101,6 @@ fieldset {
 .walkMonth {
 	font-size: 2.5em;
 	text-shadow: 2px 2px black;
-}
-
-#social {
-	float: right;
-	margin-right: 10px;
 }
 
 /*
