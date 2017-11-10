@@ -6,11 +6,13 @@ The website provides information for both existing and potential group members. 
 
 ## Responsive Design
 
-There is one breakpoint set which is activated when the page width exceeds 800px. This switches from a horizontal menu to a vertical menu and also changes the header and footer text from left to centre aligned. In order to prevent the site being stretched too wide, a maximum width of 1200px is set on the body. A media query is used to add left and right borders to the body should the width of the viewport exceed 1200px.
+There is one major breakpoint set which is activated when the page width exceeds 800px. This switches from a horizontal menu to a vertical menu and also changes the header and footer text from left to centre aligned. In order to prevent the site being stretched too wide, a maximum width of 1200px is set on the body. A media query is used to add left and right borders to the body should the width of the viewport exceed 1200px.
 
 On the Home Page, Flexbox is used to arrange the information boxes and a minimum width of 250 pixels is set to ensure that the boxes do not become too narrow. Should the page width be such that the boxes would drop below 250 pixels, the furthest box to the right will drop below the others. Flexbox is also used in the membership form to show the two fieldsets alongside each other in the desktop display.
 
-On the Upcoming Walks and Photo Galleries pages, the flex direction is initially set to column, in order to display two sections of content one above the other. In the desktop stylesheet, the direction is altered to row in order to show the two sections side by side.
+On the Upcoming Walks and Photo Galleries pages, the flex direction is initially set to column, in order to display two sections of content one above the other. In the desktop stylesheet, the direction is altered to row in order to show the two sections side by side. Links to switch content between the available months appear larger in the desktop view, while a media query is used to make them larger still on viewports wider than 1000 pixels. This is done to ensure a consistent layout of three rows containing two links each, while making best use of the available space on larger displays.
+
+The CSS for the default site layout (viewport maximum 800 pixels wide) is contained in one file, while the alternative styling for wider displays is contained in a separate file.
 
 ## JavaScript Functionality
 
@@ -74,7 +76,9 @@ The site was deployed to GitHub pages very early in its development. The chief r
 
 ## Testing
 
-The site was tested on a variety of devices and on a number of different browsers. The site was developed primarily using Chrome on a Windows 10 PC, while further testing was done on the PC using Firefox and Microsoft Edge. The site was tested on smaller devices, both tablet and mobile phone, both running Android. Testing on these devices included using the Android versions of both Chrome and Firefox.
+The site was tested on a variety of devices and on a number of different browsers. The site was developed primarily using Chrome on a Windows 10 PC, while further testing was done on the PC using Firefox and Microsoft Edge. The site was tested on smaller devices, both tablet and mobile phone, both running Android.
+
+Testing on these devices included using the Android versions of both Chrome and Firefox. In testing the site on very narrow devices, it was noted that the minumum width on the Home Page information boxes began to cause a problem when the width of the viewport dropped below 310 pixels. Should a user visit the site on a device narrower than this, some horizontal scrolling may be needed to see the entirety of the information boxes.
 
 In the context of the functionality of the site, both the simple contact form on the Home Page and the membership form on the Join the Group page required testing to ensure that the correct validation message would be displayed. Both were tested with and without input in the required fields, ensuring that the failure message would be shown if any one of the required fields was left blank. The membership form was further tested with a variety of inputs in the 'Walking Details' fieldset, to ensure that the correct information message would be displayed if the user selected any of the inputs which had a message attached.
 

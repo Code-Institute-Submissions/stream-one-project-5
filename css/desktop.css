@@ -1,3 +1,7 @@
+/*
+Styles in this file relate to viewports wider than 800 pixels.
+*/
+
 html {
 	background-color: #f9fff9;
 }
@@ -118,5 +122,17 @@ Media query to make content switcher menus larger on viewports wider than 1000 p
 	.walkMonth {
 		font-size: 3em;
 		text-shadow: 2px 2px black;
+	}
+}
+
+/*
+Media query for widescreen monitors. The maximum width of the body is set as 1200 pixels.
+Any display wider than this will have left and right borders added, with a box-shadow effect.
+*/
+@media screen and (min-width: 1201px) {
+	body {
+		border-left: 2px solid #339933;
+		border-right: 2px solid #339933;
+		box-shadow: 0px 2px 5px 2px #669966;
 	}
 }

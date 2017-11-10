@@ -23,71 +23,72 @@
 		</nav>
 	</header>
 
-	<section id="fader">
+	<div id="fader">
 		<img class="faderImage hiddenContent fadeIn" src="img/slider/1.jpg" alt="Header Images" />
 		<img class="faderImage hiddenContent fadeIn" src="img/slider/2.jpg" alt="Header Images" />
 		<img class="faderImage hiddenContent fadeIn" src="img/slider/3.jpg" alt="Header Images" />
 		<img class="faderImage hiddenContent fadeIn" src="img/slider/4.jpg" alt="Header Images" />
 		<img class="faderImage hiddenContent fadeIn" src="img/slider/5.jpg" alt="Header Images" />
 		<img class="faderImage hiddenContent fadeIn" src="img/slider/6.jpg" alt="Header Images" />
-	</section>
+	</div>
 
-	<section id="homeIntro">
-		<h2>Welcome to South West Walking</h2>
-		<p>We are a small, friendly group which arranges monthly walks around Devon and Cornwall. Many of our walks are on Dartmoor, with the occasional trip to Bodmin Moor, Exmoor or the South West Coast Path. We typically meet at 10.00 am on the second Saturday of each month. The group is suitable for all ages and all levels of experience, it is not necessary to be an experienced long-distance walker to join.</p>
-		<p>Our website provides information about upcoming events and photo galleries of past walks, as well as guidance for people who may not be familiar with rural walking. Please contact us for more information or to join the group.</p>
-	</section>
+	<main>
+		
+		<section id="homeIntro">
+			<h2>Welcome to South West Walking</h2>
+			<p>We are a small, friendly group which arranges monthly walks around Devon and Cornwall. Many of our walks are on Dartmoor, with the occasional trip to Bodmin Moor, Exmoor or the South West Coast Path. We typically meet at 10.00 am on the second Saturday of each month. The group is suitable for all ages and all levels of experience, it is not necessary to be an experienced long-distance walker to join.</p>
+			<p>Our website provides information about upcoming events and photo galleries of past walks, as well as guidance for people who may not be familiar with rural walking. Please contact us for more information or to join the group.</p>
+		</section>
 
-	<section id="homeContent">
+		<section id="homeContent">
 
-		<section class="infoBox">
-			<h2>Next Walk</h2>
-			<h3>Saturday 11 November 2017</h3>
-			<p>Meeting at the car park near Dousland at 10.00 am, we will head up the route of the old railway line towards Princetown before turning south and following the Devonport Leat back towards the car park.</p>
-			<a class="infoLink" href="future.html">[Full Details]</a>
-			<div id="mapHolder">
-				<div id="homeMap">
-					<noscript>
-						<h3 id="noScript">The preview map is not available as JavaScript is not currently running in your browser.</h3>
-					</noscript>
+			<div class="infoBox">
+				<h2>Next Walk</h2>
+				<h3>Saturday 11 November 2017</h3>
+				<p>Meeting at the car park near Dousland at 10.00 am, we will head up the route of the old railway line towards Princetown before turning south and following the Devonport Leat back towards the car park.</p>
+				<a class="infoLink" href="future.html">[Full Details]</a>
+				<div id="mapHolder">
+					<div id="homeMap">
+						<noscript>
+							<h3 id="noScript">The preview map is not available as JavaScript is not currently running in your browser.</h3>
+						</noscript>
+					</div>
 				</div>
 			</div>
+
+			<div class="infoBox">
+				<h2>Last Walk</h2>
+				<h3>Saturday 14 October 2017</h3>
+				<p>We headed from the old pump house near Princetown up to Great Mis Tor, before carefully crossing the River Walkham and returning via Merrivale quarry and stone row.</p>
+				<a class="infoLink" href="past.html">[Full Details]</a>
+				<img id="infoPic" src="img/oct17/1_th.jpg" alt="Last Walk" />
+			</div>
+
+			<div class="infoBox quickForm">
+				<h2>Quick Contact</h2>
+				<p>If you would like to join the group there is a <a class="textLink" href="join.html">membership form</a> available here. For other enquiries, please use the contact form below. Fields marked * are required.</p>
+				<noscript>
+					<h3 id="noScript">Please ensure that JavaScript is running in your browser before attempting to send a message.</h3>
+				</noscript>
+				<form name="quickForm" id="quickForm">
+					<div class="formElement">Name*:</div> <input class="quickFormInput required" type="text" name="fullName" id="fullName" /><br />
+					<div class="formElement">E-Mail*:</div> <input class="quickFormInput required" type="email" name="email" id="emailAddress" /><br />
+					<div class="formElement">Telephone:</div> <input class="quickFormInput" type="tel" name="telephone" id="telephoneNumber" /><br />
+					<div class="formElement">Message*:</div> <textarea class="quickFormInput required" rows="4" name="message" id="messageText" ></textarea><br />
+					<input class="formElement" type="button" value="Send Message" onclick="validateQuickForm()" />
+				</form>
+				<div id="formValidation" class="quickForm hiddenContent">
+					<p id="validationMessage"></p>
+					<button id="validationButton" onclick="closeValidator()">OK</button>
+				</div>
+			</div>
+
 		</section>
 
-		<section class="infoBox">
-			<h2>Last Walk</h2>
-			<h3>Saturday 14 October 2017</h3>
-			<p>We headed from the old pump house near Princetown up to Great Mis Tor, before carefully crossing the River Walkham and returning via Merrivale quarry and stone row.</p>
-			<a class="infoLink" href="past.html">[Full Details]</a>
-			<img id="infoPic" src="img/oct17/1_th.jpg" alt="Last Walk" />
-		</section>
-
-		<section class="infoBox quickForm">
-			<h2>Quick Contact</h2>
-			<p>If you would like to join the group there is a <a class="textLink" href="join.html">membership form</a> available here. For other enquiries, please use the contact form below. Fields marked * are required.</p>
-			<noscript>
-				<h3 id="noScript">Please ensure that JavaScript is running in your browser before attempting to send a message.</h3>
-			</noscript>
-			<form name="quickForm" id="quickForm">
-				<div class="formElement">Name*:</div> <input class="quickFormInput required" type="text" name="fullName" id="fullName" /><br />
-				<div class="formElement">E-Mail*:</div> <input class="quickFormInput required" type="email" name="email" id="emailAddress" /><br />
-				<div class="formElement">Telephone:</div> <input class="quickFormInput" type="tel" name="telephone" id="telephoneNumber" /><br />
-				<div class="formElement">Message*:</div> <textarea class="quickFormInput required" rows="4" name="message" id="messageText" ></textarea><br />
-				<input class="formElement" type="button" value="Send Message" onclick="validateQuickForm()" />
-			</form>
-
-			<section id="formValidation" class="quickForm hiddenContent">
-				<p id="validationMessage"></p>
-				<button id="validationButton" onclick="closeValidator()">OK</button>
-			</section>
-
-		</section>
-
-
-	</section>
+	</main>
 
 	<footer>
-		<section id="social">
+		<div id="social">
 			<!--
 				Links to social media accounts.
 				As these accounts do not exist the links direct
@@ -97,7 +98,7 @@
 			<a class="social twitter" href="http://www.twitter.com" target="_blank" alt="Twitter"></a>
 			<a class="social instagram" href="http://www.instagram.com" target="_blank" alt="Instagram"></a>
 			<a class="social youtube" href="http://www.youtube.com" target="_blank" alt="YouTube"></a>
-		</section>
+		</div>
 		<span id="footerText">&copy; 2017 South West Walking</span>
 	</footer>
 

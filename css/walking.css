@@ -10,18 +10,6 @@ body {
 	max-width: 1200px;
 }
 
-/*
-Media query for widescreen monitors. The maximum width of the body is set as 1200 pixels.
-Any display wider than this will have left and right borders added, with a box-shadow effect.
-*/
-@media screen and (min-width: 1201px) {
-	body {
-		border-left: 2px solid #339933;
-		border-right: 2px solid #339933;
-		box-shadow: 0px 2px 5px 2px #669966;
-	}
-}
-
 p {
 	text-align: justify;
 }
