@@ -12,7 +12,7 @@ function gallerySwitcher(month) {
 	/* Ensure that the 'photoGallery' div is empty in readiness for a new gallery. */
 	document.getElementById("photoGallery").innerHTML = "";
 
-	/* Object defining how may images are available in each gallery. */
+	/* Object defining how may images are available in each gallery. Currently all galleries have six images but gallery length can easily be changed here. */
 	var availableGalleries = {
 		"oct17": 6,
 		"sep17": 6,
@@ -22,14 +22,19 @@ function gallerySwitcher(month) {
 		"may17": 6,
 	};
 
-	/* Loop to generate the gallery for the chosen month by creating a div for each thumbnail image in the gallery and adding the HTML for the thumbnail, then appending the div to the photoGallery element. */
+	/* Loop to generate the gallery for the chosen month by creating a div for each thumbnail image in the gallery and creating an image element for each thumbnail. Each image is the appended to the div, before the div is appended to the photoGallery element in the HTML file. */
 	for (var i = 0; i < availableGalleries[chosenMonth]; i++) {
 
-		var galleryImage = document.createElement("div");
-		galleryImage.setAttribute("class", chosenMonth + " walkGallery");
-		galleryImage.setAttribute("onclick", "openBox('" + chosenMonth + "'," + (i + 1) + ")");
-		galleryImage.innerHTML = '<img src="img/' + chosenMonth + '/' + (i + 1) + '_th.jpg" alt="Walk Image" /></div>';
-		document.getElementById("photoGallery").appendChild(galleryImage);
+		var galleryContainer = document.createElement("div");
+		galleryContainer.setAttribute("class", chosenMonth + " walkGallery");
+		galleryContainer.setAttribute("onclick", "openBox('" + chosenMonth + "'," + (i + 1) + ")");
+
+		var galleryImage = document.createElement("img");
+		galleryImage.setAttribute("src", "img/" + chosenMonth + "/" + (i + 1) + "_th.jpg");
+		galleryImage.setAttribute("alt", "Walk Image");
+
+		galleryContainer.appendChild(galleryImage);
+		document.getElementById("photoGallery").appendChild(galleryContainer);
 	}
 
 }
