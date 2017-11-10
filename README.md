@@ -66,6 +66,8 @@ As with the contact form on the Home Page, the form does not submit as the scope
 
 Use of external code was made through the OS Openspace maps. Using these maps in the website requires the inclusion of one external JavaScript file, hosted by OS Openspace, which generates the maps. Additionally, the Openspace Map Builder generates JavaScript code which sets the centre point of the map and if required displays the planned route as a line on the map. Once generated, this code needs to be stored on the website server in a separate JavaScript file.
 
+For the maps on the Upcoming Walks page, part of the generated code was rewritten to enable six different maps to be created from within a single JavaScript function. The grid references for the centre point, starting position and route on each map were placed inside an object and the data for the chosen map inserted into the script when the function was called. Further to that, a loop was introduced to push the grid references for the route line into an array, rather than inserting each one separately as the generated code did.
+
 ## Deployment
 
 The site was deployed to GitHub pages very early in its development. The chief reason for this was to enable easy testing on other devices, specifically tablet and mobile, as development was being done on a PC. Once a new piece of functionality had been added and tested on a variety of browsers, a new commit was made to GitHub ensuring that the 'gh-pages' branch was up to date at all times.

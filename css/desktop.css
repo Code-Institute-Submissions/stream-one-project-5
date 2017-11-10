@@ -78,13 +78,13 @@ fieldset {
 
 .switchLink {
 	margin: 20px;
-	width: 160px;
-	height: 120px;
+	width: 120px;
+	height: 90px;
 }
 
 .switchLink img {
-	width: 160px;
-	height: 120px;
+	width: 120px;
+	height: 90px;
 }
 
 .switchLink:hover {
@@ -92,11 +92,31 @@ fieldset {
 }
 
 .walkMonth {
-	font-size: 3em;
+	font-size: 2.5em;
 	text-shadow: 2px 2px black;
 }
 
 #social {
 	float: right;
 	margin-right: 10px;
+}
+
+/*
+Media query to make content switcher menus larger on viewports wider than 1000 pixels.
+*/
+@media screen and (min-width: 1001px) {
+	.switchLink {
+		margin: 20px;
+		width: 160px;
+		height: 120px;
+	}
+
+	.switchLink img {
+		width: 160px;
+		height: 120px;
+	}
+	.walkMonth {
+		font-size: 3em;
+		text-shadow: 2px 2px black;
+	}
 }
