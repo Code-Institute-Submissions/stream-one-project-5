@@ -9,7 +9,7 @@ function gallerySwitcher(month) {
 		chosenMonth = month;
 	}
 
-	/* Ensure that the 'photoGallery' div is empty in readiness for a new map. */
+	/* Ensure that the 'photoGallery' div is empty in readiness for a new gallery. */
 	document.getElementById("photoGallery").innerHTML = "";
 
 	/* Object defining how may images are available in each gallery. */
@@ -22,7 +22,7 @@ function gallerySwitcher(month) {
 		"may17": 6,
 	};
 
-	/* Loop to generate the gallery for the chosen month by creating a div for each thumbnail image in the gallery adding the HTML for the thumbnail, then appending the div to the photoGallery element. */
+	/* Loop to generate the gallery for the chosen month by creating a div for each thumbnail image in the gallery and adding the HTML for the thumbnail, then appending the div to the photoGallery element. */
 	for (var i = 0; i < availableGalleries[chosenMonth]; i++) {
 
 		var galleryImage = document.createElement("div");

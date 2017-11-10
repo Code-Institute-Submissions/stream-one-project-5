@@ -365,6 +365,10 @@ fieldset {
 	display: block;
 }
 
+.menuRow {
+	display: inline-block;
+}
+
 .switchLink {
 	margin: 10px;
 	border: 1px solid #339933;
