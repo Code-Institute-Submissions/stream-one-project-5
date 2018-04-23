@@ -99,7 +99,7 @@ As with the contact form on the Home Page, the form does not submit as the scope
 
 ## Deployment
 
-The site was deployed to GitHub pages using a 'gh-pages' branch in the respository. This deployment was done very early in the development process. The chief reason for this was to enable easy testing on a range of other devices, specifically tablet and mobile, as development was being done on a PC. Once a new piece of functionality had been added and tested on a variety of browsers, a new commit was made to GitHub ensuring that the 'gh-pages' branch was up to date at all times.
+The site was deployed to [GitHub pages](https://andrewhstead.github.io/stream-one-project/) using a 'gh-pages' branch in the respository. This deployment was done very early in the development process. The chief reason for this was to enable easy testing on a range of other devices, specifically tablet and mobile, as development was being done on a PC. Once a new piece of functionality had been added and tested on a variety of browsers, a new commit was made to GitHub ensuring that the 'gh-pages' branch was up to date at all times.
 
 ## Testing
 
